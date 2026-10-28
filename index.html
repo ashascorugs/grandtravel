@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="hotel-style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Saudi Stays – Hotels in Saudi Arabia</title>
+<style>
+    :root{--navy:#0B1F3A;--ocean:#1565C0;--sky:#42A5F5;--white:#FFFFFF;--gray:#F4F7FA;--text:#0B1F3A;--card:#FFFFFF;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+    *{box-sizing:border-box;margin:0}
+   
+    </style>
+    </head>
+    <body>
+    <header><b>SAUDI STAYS</b><nav><a href="#hotels">Hotels</a><a href="#contact">Contact</a></nav></header>
+    
+    <div class="hero">
+      <div class="orb o1"></div><div class="orb o2"></div>
+      <h1>Hotels of Saudi Arabia</h1>
+      <p>Makkah, Madinah, Jeddah aur Riyadh ke behtareen hotels, rooms aur room videos – sab ek jagah.</p>
+      <a class="btn" href="#hotels">Explore Hotels</a>
+    </div>
+    
+    <section id="hotels">
+      <h2>Our Hotels</h2>
+      <div class="grid row-3" id="hotelGrid"></div>
+    </section>
+    
+    <section id="contact" style="background:var(--white) text-1">
+      <h2 >Book via WhatsApp</h2>
+      <div class="grid row-2">
+        <div class="grid-item reveal" style="text-align:center"><p style="font-family:Georgia,serif">Booking, rates aur availability ke liye humein WhatsApp karein.</p></div>
+        <div class="grid-item reveal" style="text-align:center"><a class="btn" style="animation:none;background:#25D366;color:#fff" href="https://wa.me/923009224346" target="_blank" rel="noopener">WhatsApp: 0300 9224346</a></div>
+      </div>
+    </section>
+    
+    <footer>© 2026 Saudi Stays · <a href="https://wa.me/923009224346" target="_blank" rel="noopener">03009224346</a></footer>
+    <a class="fab" href="https://wa.me/923009224346?text=Assalam%20o%20Alaikum%2C%20hotel%20booking%20ke%20baray%20me%20maloomat%20chahiye." target="_blank" rel="noopener" aria-label="WhatsApp">&#9990;</a>
+    
+    <script>
+    // ---- Edit this list: add hotels/rooms and paste your real YouTube links in "video" ----
+    var HOTELS=[
+    {name:"Fairmont Makkah Clock Royal Tower",city:"Makkah",stars:5,icon:"🕋",c:"#0B1F3A,#1565C0",desc:"Haram ke bilkul qareeb, Clock Tower complex me luxury hotel.",tags:["Haram View","Restaurants","Lift Access"],rooms:[
+     {n:"Deluxe Room",d:"Comfortable room, city ya Kaaba view options.",video:"https://www.youtube.com/results?search_query=Fairmont+Makkah+Clock+Royal+Tower+deluxe+room"},
+     {n:"Kaaba View Suite",d:"Spacious suite, living area ke sath.",video:"https://www.youtube.com/results?search_query=Fairmont+Makkah+Clock+Royal+Tower+suite"}]},
+    {name:"Swissôtel Al Maqam Makkah",city:"Makkah",stars:5,icon:"🌙",c:"#1565C0,#42A5F5",desc:"Abraj Al Bait complex me modern 5-star hotel.",tags:["Near Haram","Family Rooms","Dining"],rooms:[
+     {n:"Superior Room",d:"Aaramdeh room, family ke liye munasib.",video:"https://www.youtube.com/results?search_query=Swissotel+Al+Maqam+Makkah+room"},
+     {n:"Executive Suite",d:"Bara suite, extra seating space.",video:"https://www.youtube.com/results?search_query=Swissotel+Al+Maqam+Makkah+suite"}]},
+    {name:"Pullman ZamZam Madina",city:"Madinah",stars:5,icon:"🕌",c:"#0B1F3A,#42A5F5",desc:"Masjid an-Nabawi ke qareeb, ziyarat ke liye behtareen location.",tags:["Near Masjid Nabawi","Buffet","Lift Access"],rooms:[
+     {n:"Classic Room",d:"Saaf suthra aur sukoon wala room.",video:"https://www.youtube.com/results?search_query=Pullman+ZamZam+Madina+room"},
+     {n:"Family Suite",d:"Bare groups ke liye connecting rooms.",video:"https://www.youtube.com/results?search_query=Pullman+ZamZam+Madina+suite"}]},
+    {name:"Madinah Hilton",city:"Madinah",stars:5,icon:"🌴",c:"#1565C0,#0B1F3A",desc:"Haram area me Hilton ki mashhoor service aur comfort.",tags:["Haram Area","Restaurants","Wi‑Fi"],rooms:[
+     {n:"King Room",d:"Bara bed, modern facilities.",video:"https://www.youtube.com/results?search_query=Madinah+Hilton+room"},
+     {n:"Twin Room",d:"Do beds, dosto ya family ke liye.",video:"https://www.youtube.com/results?search_query=Madinah+Hilton+twin+room"}]},
+    {name:"The Ritz-Carlton Jeddah",city:"Jeddah",stars:5,icon:"🌊",c:"#42A5F5,#0B1F3A",desc:"Red Sea ke kinare luxury resort style hotel.",tags:["Sea View","Pool","Spa"],rooms:[
+     {n:"Deluxe Sea View",d:"Samandar ka khoobsurat nazara.",video:"https://www.youtube.com/results?search_query=Ritz+Carlton+Jeddah+room"},
+     {n:"Premier Suite",d:"Luxury suite, private lounge.",video:"https://www.youtube.com/results?search_query=Ritz+Carlton+Jeddah+suite"}]},
+    {name:"Four Seasons Riyadh at Kingdom Centre",city:"Riyadh",stars:5,icon:"🏙️",c:"#0B1F3A,#1565C0",desc:"Riyadh ke dil me Kingdom Centre tower ke andar.",tags:["City View","Shopping","Business"],rooms:[
+     {n:"Deluxe City Room",d:"Shehar ke views wala modern room.",video:"https://www.youtube.com/results?search_query=Four+Seasons+Riyadh+Kingdom+Centre+room"},
+     {n:"Executive Suite",d:"Business travellers ke liye suite.",video:"https://www.youtube.com/results?search_query=Four+Seasons+Riyadh+suite"}]}
+    ];
+    var WA="923009224346",g=document.getElementById("hotelGrid");
+    HOTELS.forEach(function(h,i){
+     var rooms=h.rooms.map(function(r){
+      var msg=encodeURIComponent("Assalam o Alaikum, "+h.name+" ("+r.n+") ki booking ke baray me maloomat chahiye.");
+      return '<div class="room"><h4>'+r.n+'</h4><p>'+r.d+'</p><div class="acts"><a class="yt" href="'+r.video+'" target="_blank" rel="noopener">▶ Room Video</a><a class="wa" href="https://wa.me/'+WA+'?text='+msg+'" target="_blank" rel="noopener">WhatsApp</a></div></div>';
+     }).join("");
+     var el=document.createElement("div");
+     el.className="card reveal";el.style.transitionDelay=(i%3)*120+"ms";
+     el.innerHTML='<div class="banner" style="background:linear-gradient(135deg,'+h.c+')">'+h.icon+'</div><div class="body"><h3>'+h.name+'</h3><div class="meta">'+h.city+' · '+"★".repeat(h.stars)+'</div><p>'+h.desc+'</p><div class="tags">'+h.tags.map(function(t){return '<span>'+t+'</span>'}).join("")+'</div><button class="toggle">View Rooms</button><div class="rooms">'+rooms+'</div></div>';
+     var btn=el.querySelector(".toggle"),box=el.querySelector(".rooms");
+     btn.onclick=function(){var open=box.style.maxHeight&&box.style.maxHeight!=="0px";box.style.maxHeight=open?"0px":box.scrollHeight+"px";btn.textContent=open?"View Rooms":"Hide Rooms"};
+     g.appendChild(el);
+    });
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target)}})},{threshold:.15});
+    document.querySelectorAll(".reveal").forEach(function(n){io.observe(n)});
+    </script>
+    </body>
+    </html>
+    
