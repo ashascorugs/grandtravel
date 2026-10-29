@@ -1,81 +1,2878 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="stylesheet" href="hotel-style.css">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
-<title>Saudi Stays – Hotels in Saudi Arabia</title>
-<style>
-    :root{--navy:#0B1F3A;--ocean:#1565C0;--sky:#42A5F5;--white:#FFFFFF;--gray:#F4F7FA;--text:#0B1F3A;--card:#FFFFFF;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-    *{box-sizing:border-box;margin:0}
-   
-    </style>
-    </head>
-    <body>
-    <header><b>SAUDI STAYS</b><nav><a href="#hotels">Hotels</a><a href="#contact">Contact</a></nav></header>
-    
-    <div class="hero">
-      <div class="orb o1"></div><div class="orb o2"></div>
-      <h1>Hotels of Saudi Arabia</h1>
-      <p>Makkah, Madinah, Jeddah aur Riyadh ke behtareen hotels, rooms aur room videos – sab ek jagah.</p>
-      <a class="btn" href="#hotels">Explore Hotels</a>
+<!doctype html>
+<html
+  lang="en"
+  class="bg-ink"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Grand Travel &amp; Tours | Hajj, Umrah &amp; Premium Travel Services</title>
+    <meta
+      name="description"
+      content="Begin a blessed journey of Hajj &amp; Umrah through Makkah, Madinah and Jeddah with Grand Travel &amp; Tours."
+    />
+    <meta
+      property="og:title"
+      content="Grand Travel &amp; Tours | Hajj, Umrah &amp; Premium Travel"
+    />
+    <meta
+      property="og:description"
+      content="Premium Hajj and Umrah packages with trusted guidance and comfort."
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      property="og:site_name"
+      content="Grand Travel & Tours"
+    />
+    <link
+      rel="icon"
+      href="./favicon.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/fonts.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/extra.css"
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "Grand Travel & Tours",
+        "description": "Hajj, Umrah and premium travel services."
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Plain HTML + CSS + JavaScript version. Behaviour is in assets/js/main.js -->
+    <div id="root">
+      <link
+        rel="preload"
+        as="image"
+        href="./assets/images/logo.png"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="./assets/images/makkah.jpg"
+        fetchpriority="high"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="./assets/images/madinah.jpg"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="./assets/images/jeddah.jpg"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="./assets/images/jabal-noor.jpg"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="./assets/images/consult.jpg"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="./assets/images/traveler.jpg"
+      />
+      <div
+        aria-hidden="true"
+        class="fixed inset-x-0 top-0 z-[60] h-[2px] origin-left bg-gold-gradient"
+        data-progress
+      ></div>
+      <!-- HEADER AND NAVIGATION -->
+      <header
+        class="fixed inset-x-0 top-0 z-50 transition-all duration-500 py-4"
+      >
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 lg:px-8">
+          <a
+            aria-label="Grand Travel home"
+            class="shrink-0"
+            href="index.html"
+            data-status="active"
+            aria-current="page"
+          >
+            <img
+              src="./assets/images/logo.png"
+              alt="Grand Travel"
+              class="h-10 w-auto lg:h-12"
+            />
+          </a>
+          <nav
+            aria-label="Main"
+            class="hidden items-center gap-1 rounded-full border border-foreground/15 bg-ink/30 px-3 py-1.5 backdrop-blur-md lg:flex"
+          >
+            <div
+              class="inline-block"
+            >
+              <a
+                data-cursor="link"
+                class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold"
+                href="index.html"
+                data-status="active"
+                aria-current="page"
+              >
+                Home
+                <span
+                  class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+                ></span>
+              </a>
+            </div>
+            <div
+              class="inline-block"
+            >
+              <a
+                data-cursor="link"
+                class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold"
+                href="about.html"
+              >
+                About Us
+                <span
+                  class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+                ></span>
+              </a>
+            </div>
+            <div
+              class="inline-block"
+            >
+              <a
+                data-cursor="link"
+                class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold"
+                href="packages.html"
+              >
+                Packages
+                <span
+                  class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+                ></span>
+              </a>
+            </div>
+            <div
+              class="inline-block"
+            >
+              <a
+                data-cursor="link"
+                class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold"
+                href="destinations.html"
+              >
+                Destinations
+                <span
+                  class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+                ></span>
+              </a>
+            </div>
+            <div
+              class="inline-block"
+            >
+              <a
+                data-cursor="link"
+                class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold"
+                href="gallery.html"
+              >
+                Gallery
+                <span
+                  class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+                ></span>
+              </a>
+            </div>
+            <div
+              class="inline-block"
+            >
+              <a
+                data-cursor="link"
+                class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold"
+                href="contact.html"
+              >
+                Contact Us
+                <span
+                  class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
+                ></span>
+              </a>
+            </div>
+          </nav>
+          <div class="items-center gap-2 hidden xl:flex">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Facebook"
+              data-cursor="link"
+              class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-facebook"
+                aria-hidden="true"
+              >
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+              data-cursor="link"
+              class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-instagram"
+                aria-hidden="true"
+              >
+                <rect
+                  width="20"
+                  height="20"
+                  x="2"
+                  y="2"
+                  rx="5"
+                  ry="5"
+                ></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line
+                  x1="17.5"
+                  x2="17.51"
+                  y1="6.5"
+                  y2="6.5"
+                ></line>
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              data-cursor="link"
+              class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-linkedin"
+                aria-hidden="true"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect
+                  width="4"
+                  height="12"
+                  x="2"
+                  y="9"
+                ></rect>
+                <circle
+                  cx="4"
+                  cy="4"
+                  r="2"
+                ></circle>
+              </svg>
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="YouTube"
+              data-cursor="link"
+              class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-youtube"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                ></path>
+                <path d="m10 15 5-3-5-3z"></path>
+              </svg>
+            </a>
+          </div>
+          <button
+            aria-label="Open menu"
+            class="grid h-11 w-11 place-items-center rounded-full border border-gold/50 text-gold lg:hidden"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16"></path>
+              <path d="M4 12h16"></path>
+              <path d="M4 19h16"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <!-- MAIN PAGE CONTENT -->
+      <main>
+        <!-- HERO SLIDER -->
+        <section
+          class="relative h-[100svh] min-h-[640px] overflow-hidden"
+          aria-roledescription="carousel"
+          aria-label="Destinations"
+        >
+          <div
+            class="absolute inset-0"
+          >
+            <img
+              src="./assets/images/makkah.jpg"
+              alt="Makkah skyline"
+              fetchpriority="high"
+              class="absolute inset-0 h-full w-full object-cover"
+              style="opacity: 1; transform: scale(1.02)"
+            />
+          </div>
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/30 to-transparent"
+          ></div>
+          <div
+            class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-ink/60 to-transparent"
+          ></div>
+          <div
+            class="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-5 pb-40 lg:px-8"
+          >
+            <div class="max-w-xl">
+              <p
+                class="flex items-center gap-3 font-serif text-xs uppercase text-gold-soft" data-reveal="fade"
+              >
+                <span class="h-px w-8 bg-gold"></span>
+                Sacred Journey
+              </p>
+              <h1
+                class="mt-3 overflow-hidden font-serif text-6xl font-bold leading-none sm:text-8xl lg:text-[8.5rem]"
+              >
+                <span
+                  class="block text-gold-gradient"
+                >
+                  MAKKAH
+                </span>
+              </h1>
+              <div
+                class="mt-3 flex w-64 origin-left items-center gap-2 text-gold" data-reveal="line"
+              >
+                <span class="h-px flex-1 bg-gold/70"></span>
+                ✦
+                <span class="h-px flex-1 bg-gold/70"></span>
+              </div>
+              <p
+                class="mt-5 max-w-md text-base text-foreground/85 sm:text-lg" data-reveal="up"
+              >
+                Begin a blessed journey of Hajj &amp; Umrah through Makkah, Madinah and Jeddah.
+              </p>
+              <div
+                class="mt-8" data-reveal="up"
+              >
+                <div
+                  class="inline-block"
+                >
+                  <a href="destinations.html">
+                    <span
+                      data-cursor="button"
+                      class="group relative inline-flex items-center gap-3 overflow-hidden rounded-full border border-gold px-6 py-2.5 text-sm font-semibold tracking-wide transition-colors duration-500 bg-ink/60 text-foreground hover:text-primary-foreground"
+                    >
+                      <span
+                        class="absolute inset-0 -translate-x-full bg-gold-gradient transition-transform duration-500 ease-out group-hover:translate-x-0"
+                      ></span>
+                      <span class="relative">Explore Now</span>
+                      <span
+                        class="relative transition-transform duration-300 group-hover:translate-x-1"
+                      >
+                        →
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute bottom-24 right-4 z-10 sm:right-8 lg:right-[max(2rem,calc((100vw-80rem)/2+2rem))]"
+          >
+            <div class="flex gap-3">
+              <button
+                data-cursor="view"
+                aria-label="Show Madinah"
+                class="group relative h-36 w-24 overflow-hidden rounded-2xl border border-foreground/30 shadow-xl sm:h-44 sm:w-32" data-reveal="up"
+              >
+                <img
+                  src="./assets/images/madinah.jpg"
+                  alt=""
+                  class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <span class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent"></span>
+                <span class="absolute inset-x-2 bottom-2 text-left text-xs font-semibold">
+                  Madinah
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Show Jeddah"
+                class="group relative h-36 w-24 overflow-hidden rounded-2xl border border-foreground/30 shadow-xl sm:h-44 sm:w-32" data-reveal="up"
+              >
+                <img
+                  src="./assets/images/jeddah.jpg"
+                  alt=""
+                  class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <span class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent"></span>
+                <span class="absolute inset-x-2 bottom-2 text-left text-xs font-semibold">
+                  Jeddah
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Show Jabal Al-Noor"
+                class="group relative h-36 w-24 overflow-hidden rounded-2xl border border-foreground/30 shadow-xl sm:h-44 sm:w-32" data-reveal="up"
+              >
+                <img
+                  src="./assets/images/jabal-noor.jpg"
+                  alt=""
+                  class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <span class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent"></span>
+                <span class="absolute inset-x-2 bottom-2 text-left text-xs font-semibold">
+                  Jabal Al-Noor
+                </span>
+              </button>
+            </div>
+            <div class="mt-4 flex items-center justify-center gap-3">
+              <button
+                data-cursor="prev"
+                aria-label="Previous slide"
+                class="grid h-8 w-8 place-items-center rounded-full border border-foreground/40 bg-ink/50 hover:border-gold hover:text-gold"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-left"
+                  aria-hidden="true"
+                >
+                  <path d="m15 18-6-6 6-6"></path>
+                </svg>
+              </button>
+              <button
+                aria-label="Go to Makkah"
+                class="h-1.5 rounded-full transition-all duration-500 w-6 bg-gold"
+              ></button>
+              <button
+                aria-label="Go to Madinah"
+                class="h-1.5 rounded-full transition-all duration-500 w-1.5 bg-foreground/50"
+              ></button>
+              <button
+                aria-label="Go to Jeddah"
+                class="h-1.5 rounded-full transition-all duration-500 w-1.5 bg-foreground/50"
+              ></button>
+              <button
+                aria-label="Go to Jabal Al-Noor"
+                class="h-1.5 rounded-full transition-all duration-500 w-1.5 bg-foreground/50"
+              ></button>
+              <button
+                data-cursor="next"
+                aria-label="Next slide"
+                class="grid h-8 w-8 place-items-center rounded-full border border-foreground/40 bg-ink/50 hover:border-gold hover:text-gold"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-right"
+                  aria-hidden="true"
+                >
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="absolute inset-x-0 -bottom-6"
+          >
+            <div
+              aria-hidden="true"
+              class="pointer-events-none inset-x-0 overflow-hidden relative h-44"
+            >
+              <div class="cloud-drift absolute -inset-x-[10%] bottom-0 h-full">
+                <span
+                  class="absolute bottom-[-40%] rounded-full blur-2xl bg-ink"
+                  style="left: -4%; width: 18%; height: 90%; opacity: 0.9"
+                ></span>
+                <span
+                  class="absolute bottom-[-40%] rounded-full blur-2xl bg-ink"
+                  style="left: 8%; width: 24%; height: 115%; opacity: 0.9"
+                ></span>
+                <span
+                  class="absolute bottom-[-40%] rounded-full blur-2xl bg-ink"
+                  style="left: 20%; width: 30%; height: 140%; opacity: 0.9"
+                ></span>
+                <span
+                  class="absolute bottom-[-40%] rounded-full blur-2xl bg-ink"
+                  style="left: 32%; width: 18%; height: 165%; opacity: 0.9"
+                ></span>
+                <span
+                  class="absolute bottom-[-40%] rounded-full blur-2xl bg-ink"
+                  style="left: 44%; width: 24%; height: 90%; opacity: 0.9"
+                ></span>
+                <span
+                  class="absolute bottom-[-40%] rounded-full blur-2xl bg-ink"
+                  style="left: 56%; width: 30%; height: 115%; opacity: 0.9"
+                ></span>
+                <span
+                  class="absolute bottom-[-40%] rounded-full blur-2xl bg-ink"
+                  style="left: 68%; width: 18%; height: 140%; opacity: 0.9"
+                ></span>
+                <span
+                  class="absolute bottom-[-40%] rounded-full blur-2xl bg-ink"
+                  style="left: 80%; width: 24%; height: 165%; opacity: 0.9"
+                ></span>
+                <span
+                  class="absolute bottom-[-40%] rounded-full blur-2xl bg-ink"
+                  style="left: 92%; width: 30%; height: 90%; opacity: 0.9"
+                ></span>
+              </div>
+              <div class="absolute inset-x-0 bottom-0 h-1/3 bg-ink"></div>
+            </div>
+          </div>
+        </section>
+        <!-- END: HERO SLIDER -->
+        <!-- ABOUT PREVIEW -->
+        <section class="relative overflow-hidden bg-ink py-24 lg:py-32">
+          <img
+            src="./assets/images/makkah.jpg"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+            class="absolute inset-0 h-[120%] w-full object-cover opacity-[0.08] grayscale"
+            style="transform: translateY(-8%)"
+          />
+          <div
+            class="relative mx-auto grid max-w-7xl items-center gap-16 px-5 lg:grid-cols-2 lg:px-8"
+          >
+            <div class="relative mx-auto h-[420px] w-full max-w-[520px] sm:h-[480px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-plane absolute -left-2 top-1/2 text-gold"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"
+                ></path></svg
+              ><svg
+                aria-hidden="true"
+                class="absolute -left-6 top-10 h-[90%] w-24 text-gold/50"
+                viewBox="0 0 100 400"
+                fill="none"
+              >
+                <path
+                  d="M90 0 C 0 100, 100 250, 20 400"
+                  stroke="currentColor"
+                  stroke-dasharray="4 6"
+                ></path>
+              </svg>
+              <div
+                class="absolute left-4 top-8 h-[78%] w-[56%] overflow-hidden rounded-2xl border-4 border-ivory shadow-2xl" data-reveal="up"
+              >
+                <img
+                  src="./assets/images/consult.jpg"
+                  alt="Travel consultant planning a trip with a couple"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition-transform duration-1000 hover:scale-105"
+                />
+              </div>
+              <div
+                class="absolute bottom-0 right-2 h-[68%] w-[50%] overflow-hidden rounded-2xl border-4 border-ivory shadow-2xl" data-reveal="up"
+              >
+                <img
+                  src="./assets/images/traveler.jpg"
+                  alt="Traveler with passport at the airport"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition-transform duration-1000 hover:scale-105"
+                />
+              </div>
+              <div
+                class="absolute right-6 top-0 rounded-xl border-2 border-gold bg-gold-soft px-5 py-3 text-primary-foreground shadow-xl" data-reveal="up"
+              >
+                <span class="font-display text-5xl leading-none" data-count="30" data-suffix="+">30+</span>
+                <p class="font-serif text-xs font-semibold">Top Destinations</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-wrap items-center gap-5">
+                <span
+                  class="inline-block -rotate-3 rounded-full border px-4 py-1 font-serif text-[11px] font-semibold uppercase tracking-[0.25em] border-gold text-gold" data-reveal="label"
+                >
+                  About Us
+                </span>
+                <h2 class="font-display text-5xl text-gold-gradient lg:text-6xl">
+                  <span class="block overflow-hidden pb-[0.05em]">
+                    <span
+                      class="block" data-reveal="mask"
+                    >
+                      Grand Travel &amp; Tours
+                    </span>
+                  </span>
+                </h2>
+              </div>
+              <div data-reveal="up">
+                <p class="mt-6 max-w-lg text-foreground/80">
+                  We craft seamless travel experiences with expert planning, trusted guidance, and
+                  personalized service — from your first consultation to your final prayer in the
+                  Haramain.
+                </p>
+              </div>
+              <div data-reveal="up">
+                <div class="flex flex-wrap gap-y-4 mt-10">
+                  <div class="pr-6">
+                    <span class="font-display text-5xl text-foreground lg:text-6xl" data-count="150" data-suffix="+">150+</span>
+                    <p class="text-xs text-muted-foreground">Travel Experts</p>
+                  </div>
+                  <div class="pr-6 border-l border-gold/30 pl-6">
+                    <span class="font-display text-5xl text-foreground lg:text-6xl" data-count="2000" data-suffix="+">2000+</span>
+                    <p class="text-xs text-muted-foreground">Happy Travelers</p>
+                  </div>
+                  <div class="pr-6 border-l border-gold/30 pl-6">
+                    <span class="font-display text-5xl text-foreground lg:text-6xl" data-count="98" data-suffix="%">98%</span>
+                    <p class="text-xs text-muted-foreground">Client Satisfaction</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-10" data-reveal="up"
+              >
+                <div
+                  class="inline-block"
+                >
+                  <a href="about.html">
+                    <span
+                      data-cursor="button"
+                      class="group relative inline-flex items-center gap-3 overflow-hidden rounded-full border border-gold px-6 py-2.5 text-sm font-semibold tracking-wide transition-colors duration-500 bg-ink/60 text-foreground hover:text-primary-foreground"
+                    >
+                      <span
+                        class="absolute inset-0 -translate-x-full bg-gold-gradient transition-transform duration-500 ease-out group-hover:translate-x-0"
+                      ></span>
+                      <span class="relative">Explore More</span>
+                      <span
+                        class="relative transition-transform duration-300 group-hover:translate-x-1"
+                      >
+                        →
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END: ABOUT PREVIEW -->
+        <!-- HAJJ AND UMRAH PACKAGES -->
+        <section class="bg-ink py-24">
+          <div class="mx-auto max-w-7xl px-5 lg:px-8">
+            <div class="flex flex-col items-center justify-center gap-4 text-center md:flex-row">
+              <span
+                class="inline-block -rotate-3 rounded-full border px-4 py-1 font-serif text-[11px] font-semibold uppercase tracking-[0.25em] border-gold text-gold" data-reveal="label"
+              >
+                Packages
+              </span>
+              <h2 class="font-display text-5xl tracking-wide md:text-6xl">
+                <span class="block overflow-hidden pb-[0.05em]">
+                  <span
+                    class="block" data-reveal="mask"
+                  >
+                    Hajj and Umrah Packages
+                  </span>
+                </span>
+              </h2>
+            </div>
+            <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              <article
+                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="block"
+                  href="packages.html"
+                >
+                  <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
+                    <img
+                      src="./assets/images/kaaba-night.jpg"
+                      alt="Ramadan Umrah Package"
+                      loading="lazy"
+                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
+                    />
+                    <span
+                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right"
+                        aria-hidden="true"
+                      >
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="px-2 pb-2 pt-4">
+                    <h3 class="font-display text-xl tracking-wide">Ramadan Umrah Package</h3>
+                    <p class="mt-1 text-sm font-semibold">
+                      2 Lakh 50,000
+                      <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
+                    </p>
+                    <div
+                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-clock text-gold"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                        ></circle>
+                        <path d="M12 6v6l4 2"></path>
+                      </svg>
+                      20
+                      <!-- -->
+                      DAYS
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article
+                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="block"
+                  href="packages.html"
+                >
+                  <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
+                    <img
+                      src="./assets/images/madinah.jpg"
+                      alt="November Umrah Package"
+                      loading="lazy"
+                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
+                    />
+                    <span
+                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right"
+                        aria-hidden="true"
+                      >
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="px-2 pb-2 pt-4">
+                    <h3 class="font-display text-xl tracking-wide">November Umrah Package</h3>
+                    <p class="mt-1 text-sm font-semibold">
+                      2 Lakh 50,000
+                      <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
+                    </p>
+                    <div
+                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-clock text-gold"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                        ></circle>
+                        <path d="M12 6v6l4 2"></path>
+                      </svg>
+                      15
+                      <!-- -->
+                      DAYS
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article
+                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="block"
+                  href="packages.html"
+                >
+                  <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
+                    <img
+                      src="./assets/images/makkah.jpg"
+                      alt="September Umrah Package"
+                      loading="lazy"
+                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
+                    />
+                    <span
+                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right"
+                        aria-hidden="true"
+                      >
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="px-2 pb-2 pt-4">
+                    <h3 class="font-display text-xl tracking-wide">September Umrah Package</h3>
+                    <p class="mt-1 text-sm font-semibold">
+                      2 Lakh 50,000
+                      <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
+                    </p>
+                    <div
+                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-clock text-gold"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                        ></circle>
+                        <path d="M12 6v6l4 2"></path>
+                      </svg>
+                      10
+                      <!-- -->
+                      DAYS
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article
+                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="block"
+                  href="packages.html"
+                >
+                  <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
+                    <img
+                      src="./assets/images/mina.jpg"
+                      alt="Hajj Packages"
+                      loading="lazy"
+                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
+                    />
+                    <span
+                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right"
+                        aria-hidden="true"
+                      >
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="px-2 pb-2 pt-4">
+                    <h3 class="font-display text-xl tracking-wide">Hajj Packages</h3>
+                    <p class="mt-1 text-sm font-semibold">
+                      2 Lakh 50,000
+                      <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
+                    </p>
+                    <div
+                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-clock text-gold"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                        ></circle>
+                        <path d="M12 6v6l4 2"></path>
+                      </svg>
+                      20
+                      <!-- -->
+                      DAYS
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article
+                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="block"
+                  href="packages.html"
+                >
+                  <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
+                    <img
+                      src="./assets/images/kaaba-night.jpg"
+                      alt="Ramadan Umrah Package"
+                      loading="lazy"
+                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
+                    />
+                    <span
+                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right"
+                        aria-hidden="true"
+                      >
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="px-2 pb-2 pt-4">
+                    <h3 class="font-display text-xl tracking-wide">Ramadan Umrah Package</h3>
+                    <p class="mt-1 text-sm font-semibold">
+                      2 Lakh 50,000
+                      <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
+                    </p>
+                    <div
+                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-clock text-gold"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                        ></circle>
+                        <path d="M12 6v6l4 2"></path>
+                      </svg>
+                      20
+                      <!-- -->
+                      DAYS
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article
+                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="block"
+                  href="packages.html"
+                >
+                  <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
+                    <img
+                      src="./assets/images/madinah.jpg"
+                      alt="November Umrah Package"
+                      loading="lazy"
+                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
+                    />
+                    <span
+                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right"
+                        aria-hidden="true"
+                      >
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="px-2 pb-2 pt-4">
+                    <h3 class="font-display text-xl tracking-wide">November Umrah Package</h3>
+                    <p class="mt-1 text-sm font-semibold">
+                      2 Lakh 50,000
+                      <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
+                    </p>
+                    <div
+                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-clock text-gold"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                        ></circle>
+                        <path d="M12 6v6l4 2"></path>
+                      </svg>
+                      15
+                      <!-- -->
+                      DAYS
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article
+                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="block"
+                  href="packages.html"
+                >
+                  <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
+                    <img
+                      src="./assets/images/makkah.jpg"
+                      alt="September Umrah Package"
+                      loading="lazy"
+                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
+                    />
+                    <span
+                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right"
+                        aria-hidden="true"
+                      >
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="px-2 pb-2 pt-4">
+                    <h3 class="font-display text-xl tracking-wide">September Umrah Package</h3>
+                    <p class="mt-1 text-sm font-semibold">
+                      2 Lakh 50,000
+                      <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
+                    </p>
+                    <div
+                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-clock text-gold"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                        ></circle>
+                        <path d="M12 6v6l4 2"></path>
+                      </svg>
+                      10
+                      <!-- -->
+                      DAYS
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article
+                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="block"
+                  href="packages.html"
+                >
+                  <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
+                    <img
+                      src="./assets/images/mina.jpg"
+                      alt="Hajj Packages"
+                      loading="lazy"
+                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
+                    />
+                    <span
+                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right"
+                        aria-hidden="true"
+                      >
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="px-2 pb-2 pt-4">
+                    <h3 class="font-display text-xl tracking-wide">Hajj Packages</h3>
+                    <p class="mt-1 text-sm font-semibold">
+                      2 Lakh 50,000
+                      <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
+                    </p>
+                    <div
+                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-clock text-gold"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                        ></circle>
+                        <path d="M12 6v6l4 2"></path>
+                      </svg>
+                      20
+                      <!-- -->
+                      DAYS
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="mt-12 text-center">
+              <div
+                class="inline-block"
+              >
+                <a href="packages.html">
+                  <span
+                    data-cursor="button"
+                    class="group relative inline-flex items-center gap-3 overflow-hidden rounded-full border border-gold px-6 py-2.5 text-sm font-semibold tracking-wide transition-colors duration-500 bg-ink/60 text-foreground hover:text-primary-foreground"
+                  >
+                    <span
+                      class="absolute inset-0 -translate-x-full bg-gold-gradient transition-transform duration-500 ease-out group-hover:translate-x-0"
+                    ></span>
+                    <span class="relative">Explore More</span>
+                    <span
+                      class="relative transition-transform duration-300 group-hover:translate-x-1"
+                    >
+                      →
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END: HAJJ AND UMRAH PACKAGES -->
+        <!-- TRAVEL PHOTOGRAPHY -->
+        <section class="relative overflow-hidden bg-ivory py-24 text-ink">
+          <img
+            src="./assets/images/madinah.jpg"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+            class="pointer-events-none absolute inset-x-0 top-0 h-80 w-full object-cover opacity-[0.12] grayscale"
+          />
+          <div
+            class="absolute inset-x-0 top-0 h-80 bg-gradient-to-b from-transparent to-ivory"
+          ></div>
+          <div class="relative text-center">
+            <span
+              class="inline-block -rotate-3 rounded-full border px-4 py-1 font-serif text-[11px] font-semibold uppercase tracking-[0.25em] border-ink/60 bg-ivory text-ink" data-reveal="label"
+            >
+              Gallery
+            </span>
+            <h2 class="mt-4 font-display text-5xl leading-[0.95] md:text-7xl">
+              <span class="block overflow-hidden pb-[0.05em]">
+                <span
+                  class="block" data-reveal="mask"
+                >
+                  See our travel
+                </span>
+              </span>
+              <span class="block overflow-hidden pb-[0.05em]">
+                <span
+                  class="block" data-reveal="mask"
+                >
+                  photography
+                </span>
+              </span>
+            </h2>
+          </div>
+          <div class="relative mt-14">
+            <div
+              class="flex w-max gap-4 px-4 active:cursor-grabbing"
+              aria-label="Photo gallery"
+              draggable="false"
+            >
+              <button
+                data-cursor="view"
+                aria-label="Open Masjid al-Haram at Sunset"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/makkah.jpg"
+                  alt="Masjid al-Haram at Sunset"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Masjid al-Haram at Sunset
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Mina Tent City"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/mina.jpg"
+                  alt="Mina Tent City"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Mina Tent City
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Tawaf at Night"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/kaaba-night.jpg"
+                  alt="Tawaf at Night"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Tawaf at Night
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Masjid an-Nabawi"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/madinah.jpg"
+                  alt="Masjid an-Nabawi"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Masjid an-Nabawi
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Jabal Al-Noor"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/jabal-noor.jpg"
+                  alt="Jabal Al-Noor"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Jabal Al-Noor
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Jeddah Corniche"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/jeddah.jpg"
+                  alt="Jeddah Corniche"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Jeddah Corniche
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Makkah Skyline"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/makkah.jpg"
+                  alt="Makkah Skyline"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Makkah Skyline
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open The Holy Kaaba"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/kaaba-night.jpg"
+                  alt="The Holy Kaaba"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  The Holy Kaaba
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Masjid al-Haram at Sunset"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/makkah.jpg"
+                  alt="Masjid al-Haram at Sunset"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Masjid al-Haram at Sunset
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Mina Tent City"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/mina.jpg"
+                  alt="Mina Tent City"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Mina Tent City
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Tawaf at Night"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/kaaba-night.jpg"
+                  alt="Tawaf at Night"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Tawaf at Night
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Masjid an-Nabawi"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/madinah.jpg"
+                  alt="Masjid an-Nabawi"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Masjid an-Nabawi
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Jabal Al-Noor"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/jabal-noor.jpg"
+                  alt="Jabal Al-Noor"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Jabal Al-Noor
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Jeddah Corniche"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/jeddah.jpg"
+                  alt="Jeddah Corniche"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Jeddah Corniche
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open Makkah Skyline"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/makkah.jpg"
+                  alt="Makkah Skyline"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  Makkah Skyline
+                </span>
+              </button>
+              <button
+                data-cursor="view"
+                aria-label="Open The Holy Kaaba"
+                class="group relative h-[340px] w-[220px] shrink-0 overflow-hidden rounded-2xl sm:h-[400px] sm:w-[260px]"
+              >
+                <img
+                  src="./assets/images/kaaba-night.jpg"
+                  alt="The Holy Kaaba"
+                  loading="lazy"
+                  draggable="false"
+                  class="h-full w-full object-cover brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                />
+                <span
+                  class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ivory/90 to-transparent opacity-80"
+                ></span>
+                <span
+                  class="absolute bottom-3 left-3 translate-y-4 font-display text-lg tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  The Holy Kaaba
+                </span>
+              </button>
+            </div>
+            <button
+              aria-label="Previous photos"
+              data-cursor="prev"
+              class="absolute left-3 top-1/2 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-ink text-ivory shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-left"
+                aria-hidden="true"
+              >
+                <path d="m15 18-6-6 6-6"></path>
+              </svg>
+            </button>
+            <button
+              aria-label="Next photos"
+              data-cursor="next"
+              class="absolute right-3 top-1/2 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-ink text-ivory shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-right"
+                aria-hidden="true"
+              >
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </button>
+          </div>
+        </section>
+        <!-- END: TRAVEL PHOTOGRAPHY -->
+        <!-- SACRED DESTINATIONS -->
+        <section class="bg-ink py-24">
+          <div class="mx-auto max-w-7xl px-5 lg:px-8">
+            <div class="text-center">
+              <span
+                class="inline-block -rotate-3 rounded-full border px-4 py-1 font-serif text-[11px] font-semibold uppercase tracking-[0.25em] border-gold text-gold" data-reveal="label"
+              >
+                Destination
+              </span>
+              <h2 class="mt-4 font-display text-5xl leading-[0.95] text-gold-gradient md:text-7xl">
+                <span class="block overflow-hidden pb-[0.05em]">
+                  <span
+                    class="block" data-reveal="mask"
+                  >
+                    Discover our sacred
+                  </span>
+                </span>
+                <span class="block overflow-hidden pb-[0.05em]">
+                  <span
+                    class="block" data-reveal="mask"
+                  >
+                    destinations
+                  </span>
+                </span>
+              </h2>
+            </div>
+            <div
+              class="mt-14 grid auto-rows-[180px] grid-cols-2 gap-3 md:grid-cols-4 md:auto-rows-[200px]"
+            >
+              <div
+                class="[perspective:900px]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="group relative block h-full overflow-hidden rounded-2xl transition-transform duration-300 ease-out"
+                  href="destinations.html#makkah"
+                >
+                  <img
+                    src="./assets/images/makkah.jpg"
+                    alt="Makkah"
+                    loading="lazy"
+                    class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+                  />
+                  <span
+                    class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  ></span>
+                  <span
+                    class="absolute bottom-4 left-4 flex translate-y-4 items-center gap-2 font-display text-2xl tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                  >
+                    Makkah
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right text-gold"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="[perspective:900px] row-span-2" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="group relative block h-full overflow-hidden rounded-2xl transition-transform duration-300 ease-out"
+                  href="destinations.html#madinah"
+                >
+                  <img
+                    src="./assets/images/madinah.jpg"
+                    alt="Madinah"
+                    loading="lazy"
+                    class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+                  />
+                  <span
+                    class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  ></span>
+                  <span
+                    class="absolute bottom-4 left-4 flex translate-y-4 items-center gap-2 font-display text-2xl tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                  >
+                    Madinah
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right text-gold"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="[perspective:900px]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="group relative block h-full overflow-hidden rounded-2xl transition-transform duration-300 ease-out"
+                  href="destinations.html#jeddah"
+                >
+                  <img
+                    src="./assets/images/jeddah.jpg"
+                    alt="Jeddah"
+                    loading="lazy"
+                    class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+                  />
+                  <span
+                    class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  ></span>
+                  <span
+                    class="absolute bottom-4 left-4 flex translate-y-4 items-center gap-2 font-display text-2xl tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                  >
+                    Jeddah
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right text-gold"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="[perspective:900px]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="group relative block h-full overflow-hidden rounded-2xl transition-transform duration-300 ease-out"
+                  href="destinations.html#jabal-noor"
+                >
+                  <img
+                    src="./assets/images/jabal-noor.jpg"
+                    alt="Jabal Al-Noor"
+                    loading="lazy"
+                    class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+                  />
+                  <span
+                    class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  ></span>
+                  <span
+                    class="absolute bottom-4 left-4 flex translate-y-4 items-center gap-2 font-display text-2xl tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                  >
+                    Jabal Al-Noor
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right text-gold"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="[perspective:900px]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="group relative block h-full overflow-hidden rounded-2xl transition-transform duration-300 ease-out"
+                  href="destinations.html#arafat"
+                >
+                  <img
+                    src="./assets/images/jabal-noor.jpg"
+                    alt="Mount Arafat"
+                    loading="lazy"
+                    class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+                  />
+                  <span
+                    class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  ></span>
+                  <span
+                    class="absolute bottom-4 left-4 flex translate-y-4 items-center gap-2 font-display text-2xl tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                  >
+                    Mount Arafat
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right text-gold"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="[perspective:900px]" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="group relative block h-full overflow-hidden rounded-2xl transition-transform duration-300 ease-out"
+                  href="destinations.html#mina"
+                >
+                  <img
+                    src="./assets/images/mina.jpg"
+                    alt="Mina"
+                    loading="lazy"
+                    class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+                  />
+                  <span
+                    class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  ></span>
+                  <span
+                    class="absolute bottom-4 left-4 flex translate-y-4 items-center gap-2 font-display text-2xl tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                  >
+                    Mina
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right text-gold"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="[perspective:900px] col-span-2 md:col-span-1" data-reveal="up"
+              >
+                <a
+                  data-cursor="view"
+                  class="group relative block h-full overflow-hidden rounded-2xl transition-transform duration-300 ease-out"
+                  href="destinations.html#makkah"
+                >
+                  <img
+                    src="./assets/images/kaaba-night.jpg"
+                    alt="Masjid al-Haram"
+                    loading="lazy"
+                    class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+                  />
+                  <span
+                    class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  ></span>
+                  <span
+                    class="absolute bottom-4 left-4 flex translate-y-4 items-center gap-2 font-display text-2xl tracking-wide opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                  >
+                    Masjid al-Haram
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right text-gold"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END: SACRED DESTINATIONS -->
+        <!-- TESTIMONIALS -->
+        <section class="relative overflow-hidden py-24 text-ink">
+          <img
+            src="./assets/images/kaaba-night.jpg"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+            class="absolute inset-0 h-[115%] w-full object-cover"
+            style="transform: translateY(-6%)"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-ivory via-ivory/85 to-ivory/40"></div>
+          <div
+            class="relative mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:px-8"
+          >
+            <div>
+              <span
+                class="inline-block -rotate-3 rounded-full border px-4 py-1 font-serif text-[11px] font-semibold uppercase tracking-[0.25em] border-ink/60 bg-ivory text-ink" data-reveal="label"
+              >
+                Testimonials
+              </span>
+              <h2 class="mt-4 font-display text-5xl leading-[0.95] md:text-7xl">
+                <span class="block overflow-hidden pb-[0.05em]">
+                  <span
+                    class="block" data-reveal="mask"
+                  >
+                    Real story from
+                  </span>
+                </span>
+                <span class="block overflow-hidden pb-[0.05em]">
+                  <span
+                    class="block" data-reveal="mask"
+                  >
+                    our organic clients
+                  </span>
+                </span>
+              </h2>
+              <div data-reveal="up">
+                <div class="mt-10 flex flex-wrap gap-8">
+                  <div class="flex items-center gap-3">
+                    <span class="font-display text-6xl" data-count="10" data-suffix="K">10K</span>
+                    <p class="max-w-[110px] text-[11px] font-bold uppercase leading-tight">
+                      Successful Journey
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-3 border-l border-ink/30 pl-8">
+                    <span class="font-display text-6xl" data-count="99" data-suffix="%">99%</span>
+                    <p class="max-w-[110px] text-[11px] font-bold uppercase leading-tight">
+                      Our Customer Satisfaction Rates
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-8 flex items-center gap-4">
+                  <div class="flex -space-x-3">
+                    <img
+                      src="./assets/images/consult.jpg"
+                      alt=""
+                      class="h-12 w-12 rounded-full border-2 border-gold object-cover"
+                    />
+                    <img
+                      src="./assets/images/traveler.jpg"
+                      alt=""
+                      class="h-12 w-12 rounded-full border-2 border-gold object-cover"
+                    />
+                    <span
+                      class="grid h-12 w-12 place-items-center rounded-full border-2 border-gold bg-gold-soft font-display text-lg"
+                    >
+                      <span data-count="50" data-suffix="K">50K</span>
+                    </span>
+                  </div>
+                  <p class="text-[11px] font-bold uppercase">Our Happy Clients</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative space-y-5">
+              <figure
+                class="rounded-2xl border border-gold/30 bg-ink-2/95 p-6 text-foreground shadow-2xl" data-reveal="up"
+              >
+                <div class="flex gap-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-quote shrink-0 text-gold"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                    ></path>
+                    <path
+                      d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                    ></path>
+                  </svg>
+                  <div>
+                    <p class="text-[10px] uppercase tracking-[0.25em] text-gold">Umrah Package</p>
+                    <h3 class="font-display text-2xl tracking-wide">Umrah Package</h3>
+                    <div class="mt-1 flex gap-0.5 text-gold">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                        ></path></svg
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                        ></path></svg
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                        ></path></svg
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                        ></path></svg
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <blockquote class="mt-3 text-sm text-foreground/80">
+                      My November Umrah package was beautifully arranged. The hotels were
+                      comfortable, the transport was punctual, and every step of the journey felt
+                      easy and stress-free.
+                    </blockquote>
+                    <figcaption class="mt-4 flex items-center gap-3">
+                      <span
+                        class="grid h-10 w-10 rotate-45 place-items-center rounded-md border border-gold bg-gold-soft"
+                      >
+                        <span class="-rotate-45 font-display text-primary-foreground">A</span>
+                      </span>
+                      <span>
+                        <span class="block font-display tracking-wide">Ayesha Khan</span>
+                        <span class="text-xs text-muted-foreground">Traveler</span>
+                      </span>
+                    </figcaption>
+                  </div>
+                </div>
+              </figure>
+              <figure
+                class="rounded-2xl border border-gold/30 bg-ink-2/95 p-6 text-foreground shadow-2xl" data-reveal="up"
+              >
+                <div class="flex gap-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-quote shrink-0 text-gold"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                    ></path>
+                    <path
+                      d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                    ></path>
+                  </svg>
+                  <div>
+                    <p class="text-[10px] uppercase tracking-[0.25em] text-gold">Hotel Service</p>
+                    <h3 class="font-display text-2xl tracking-wide">
+                      Comfortable Stay &amp; Guidance
+                    </h3>
+                    <div class="mt-1 flex gap-0.5 text-gold">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                        ></path></svg
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                        ></path></svg
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                        ></path></svg
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                        ></path></svg
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <blockquote class="mt-3 text-sm text-foreground/80">
+                      We received excellent support throughout the trip. Our hotel stay was smooth,
+                      transportation was reliable, and the overall Umrah experience was peaceful and
+                      well-organized.
+                    </blockquote>
+                    <figcaption class="mt-4 flex items-center gap-3">
+                      <span
+                        class="grid h-10 w-10 rotate-45 place-items-center rounded-md border border-gold bg-gold-soft"
+                      >
+                        <span class="-rotate-45 font-display text-primary-foreground">F</span>
+                      </span>
+                      <span>
+                        <span class="block font-display tracking-wide">Fatima Noor</span>
+                        <span class="text-xs text-muted-foreground">Traveler</span>
+                      </span>
+                    </figcaption>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <!-- END: TESTIMONIALS -->
+      </main>
+      <!-- FOOTER -->
+      <footer class="relative overflow-hidden bg-ink pt-20">
+        <img
+          src="./assets/images/makkah.jpg"
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          class="absolute inset-0 h-full w-full object-cover opacity-[0.07]"
+        />
+        <div
+          class="relative mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[1fr_1.3fr_auto] lg:px-8"
+        >
+          <div>
+            <img
+              src="./assets/images/logo.png"
+              alt="Grand Travel"
+              loading="lazy"
+              class="h-14 w-auto"
+            />
+            <p class="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">
+              Helping you experience Hajj and Umrah with trusted service, comfort, and effortless
+              journeys.
+            </p>
+            <div class="flex items-center gap-2 mt-6">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+                data-cursor="link"
+                class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-facebook"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+                data-cursor="link"
+                class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-instagram"
+                  aria-hidden="true"
+                >
+                  <rect
+                    width="20"
+                    height="20"
+                    x="2"
+                    y="2"
+                    rx="5"
+                    ry="5"
+                  ></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line
+                    x1="17.5"
+                    x2="17.51"
+                    y1="6.5"
+                    y2="6.5"
+                  ></line>
+                </svg>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                data-cursor="link"
+                class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-linkedin"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect
+                    width="4"
+                    height="12"
+                    x="2"
+                    y="9"
+                  ></rect>
+                  <circle
+                    cx="4"
+                    cy="4"
+                    r="2"
+                  ></circle>
+                </svg>
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="YouTube"
+                data-cursor="link"
+                class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-youtube"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                  ></path>
+                  <path d="m10 15 5-3-5-3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="text-center">
+            <h2 class="font-display text-3xl leading-tight tracking-wide md:text-4xl">
+              For queries or package
+              <br />
+              guidance,
+              <span class="text-gold">email us anytime.</span>
+            </h2>
+            <form
+              class="mx-auto mt-6 flex max-w-md items-center gap-2 rounded-full border border-gold/40 bg-ink-2 p-1.5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail ml-3 shrink-0 text-gold"
+                aria-hidden="true"
+              >
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                <rect
+                  x="2"
+                  y="4"
+                  width="20"
+                  height="16"
+                  rx="2"
+                ></rect>
+              </svg>
+              <label
+                for="footer-email"
+                class="sr-only"
+              >
+                Email
+              </label>
+              <input
+                id="footer-email"
+                type="email"
+                required=""
+                placeholder="Enter your email"
+                class="min-w-0 flex-1 bg-transparent px-2 text-sm outline-none placeholder:text-muted-foreground"
+              />
+              <button
+                data-cursor="button"
+                class="rounded-full bg-gold-gradient px-6 py-2 text-xs font-bold uppercase tracking-widest text-primary-foreground"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div>
+            <h3 class="font-display text-xl tracking-widest text-gold">Quick Links</h3>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a
+                  class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold"
+                  href="index.html"
+                  data-status="active"
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold"
+                  href="about.html"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold"
+                  href="packages.html"
+                >
+                  Packages
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold"
+                  href="destinations.html"
+                >
+                  Destinations
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold"
+                  href="gallery.html"
+                >
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold"
+                  href="contact.html"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="relative mt-16 px-3">
+          <p
+            aria-label="Grand Travel &amp; Tours"
+            class="flex flex-wrap justify-center gap-x-[0.25em] font-display text-[17vw] leading-[0.85] md:text-[12.5vw] xl:text-[11rem]"
+          >
+            <span
+              aria-hidden="true"
+              class="inline-flex"
+            >
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  G
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  R
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  A
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  N
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  D
+                </span>
+              </span>
+            </span>
+            <span
+              aria-hidden="true"
+              class="inline-flex"
+            >
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  T
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  R
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  A
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  V
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  E
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  L
+                </span>
+              </span>
+            </span>
+            <span
+              aria-hidden="true"
+              class="inline-flex"
+            >
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-foreground" data-reveal="mask"
+                >
+                  &amp;
+                </span>
+              </span>
+            </span>
+            <span
+              aria-hidden="true"
+              class="inline-flex"
+            >
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  T
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  O
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  U
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  R
+                </span>
+              </span>
+              <span class="inline-block overflow-hidden">
+                <span
+                  class="inline-block text-gold-gradient" data-reveal="mask"
+                >
+                  S
+                </span>
+              </span>
+            </span>
+          </p>
+        </div>
+        <p class="relative border-t border-gold/15 py-4 text-center text-xs text-muted-foreground">
+          ©
+          <!-- -->
+          2026
+          <!-- -->
+          Grand Travel &amp; Tours. All rights reserved.
+        </p>
+      </footer>
     </div>
     
-    <section id="hotels">
-      <h2>Our Hotels</h2>
-      <div class="grid row-3" id="hotelGrid"></div>
-    </section>
-    
-    <section id="contact" style="background:var(--white) text-1">
-      <h2 >Book via WhatsApp</h2>
-      <div class="grid row-2">
-        <div class="grid-item reveal" style="text-align:center"><p style="font-family:Georgia,serif">Booking, rates aur availability ke liye humein WhatsApp karein.</p></div>
-        <div class="grid-item reveal" style="text-align:center"><a class="btn" style="animation:none;background:#25D366;color:#fff" href="https://wa.me/923009224346" target="_blank" rel="noopener">WhatsApp: 0300 9224346</a></div>
-      </div>
-    </section>
-    
-    <footer>© 2026 Saudi Stays · <a href="https://wa.me/923009224346" target="_blank" rel="noopener">03009224346</a></footer>
-    <a class="fab" href="https://wa.me/923009224346?text=Assalam%20o%20Alaikum%2C%20hotel%20booking%20ke%20baray%20me%20maloomat%20chahiye." target="_blank" rel="noopener" aria-label="WhatsApp">&#9990;</a>
-    
-    <script>
-    // ---- Edit this list: add hotels/rooms and paste your real YouTube links in "video" ----
-    var HOTELS=[
-    {name:"Fairmont Makkah Clock Royal Tower",city:"Makkah",stars:5,icon:"🕋",c:"#0B1F3A,#1565C0",desc:"Haram ke bilkul qareeb, Clock Tower complex me luxury hotel.",tags:["Haram View","Restaurants","Lift Access"],rooms:[
-     {n:"Deluxe Room",d:"Comfortable room, city ya Kaaba view options.",video:"https://www.youtube.com/results?search_query=Fairmont+Makkah+Clock+Royal+Tower+deluxe+room"},
-     {n:"Kaaba View Suite",d:"Spacious suite, living area ke sath.",video:"https://www.youtube.com/results?search_query=Fairmont+Makkah+Clock+Royal+Tower+suite"}]},
-    {name:"Swissôtel Al Maqam Makkah",city:"Makkah",stars:5,icon:"🌙",c:"#1565C0,#42A5F5",desc:"Abraj Al Bait complex me modern 5-star hotel.",tags:["Near Haram","Family Rooms","Dining"],rooms:[
-     {n:"Superior Room",d:"Aaramdeh room, family ke liye munasib.",video:"https://www.youtube.com/results?search_query=Swissotel+Al+Maqam+Makkah+room"},
-     {n:"Executive Suite",d:"Bara suite, extra seating space.",video:"https://www.youtube.com/results?search_query=Swissotel+Al+Maqam+Makkah+suite"}]},
-    {name:"Pullman ZamZam Madina",city:"Madinah",stars:5,icon:"🕌",c:"#0B1F3A,#42A5F5",desc:"Masjid an-Nabawi ke qareeb, ziyarat ke liye behtareen location.",tags:["Near Masjid Nabawi","Buffet","Lift Access"],rooms:[
-     {n:"Classic Room",d:"Saaf suthra aur sukoon wala room.",video:"https://www.youtube.com/results?search_query=Pullman+ZamZam+Madina+room"},
-     {n:"Family Suite",d:"Bare groups ke liye connecting rooms.",video:"https://www.youtube.com/results?search_query=Pullman+ZamZam+Madina+suite"}]},
-    {name:"Madinah Hilton",city:"Madinah",stars:5,icon:"🌴",c:"#1565C0,#0B1F3A",desc:"Haram area me Hilton ki mashhoor service aur comfort.",tags:["Haram Area","Restaurants","Wi‑Fi"],rooms:[
-     {n:"King Room",d:"Bara bed, modern facilities.",video:"https://www.youtube.com/results?search_query=Madinah+Hilton+room"},
-     {n:"Twin Room",d:"Do beds, dosto ya family ke liye.",video:"https://www.youtube.com/results?search_query=Madinah+Hilton+twin+room"}]},
-    {name:"The Ritz-Carlton Jeddah",city:"Jeddah",stars:5,icon:"🌊",c:"#42A5F5,#0B1F3A",desc:"Red Sea ke kinare luxury resort style hotel.",tags:["Sea View","Pool","Spa"],rooms:[
-     {n:"Deluxe Sea View",d:"Samandar ka khoobsurat nazara.",video:"https://www.youtube.com/results?search_query=Ritz+Carlton+Jeddah+room"},
-     {n:"Premier Suite",d:"Luxury suite, private lounge.",video:"https://www.youtube.com/results?search_query=Ritz+Carlton+Jeddah+suite"}]},
-    {name:"Four Seasons Riyadh at Kingdom Centre",city:"Riyadh",stars:5,icon:"🏙️",c:"#0B1F3A,#1565C0",desc:"Riyadh ke dil me Kingdom Centre tower ke andar.",tags:["City View","Shopping","Business"],rooms:[
-     {n:"Deluxe City Room",d:"Shehar ke views wala modern room.",video:"https://www.youtube.com/results?search_query=Four+Seasons+Riyadh+Kingdom+Centre+room"},
-     {n:"Executive Suite",d:"Business travellers ke liye suite.",video:"https://www.youtube.com/results?search_query=Four+Seasons+Riyadh+suite"}]}
-    ];
-    var WA="923009224346",g=document.getElementById("hotelGrid");
-    HOTELS.forEach(function(h,i){
-     var rooms=h.rooms.map(function(r){
-      var msg=encodeURIComponent("Assalam o Alaikum, "+h.name+" ("+r.n+") ki booking ke baray me maloomat chahiye.");
-      return '<div class="room"><h4>'+r.n+'</h4><p>'+r.d+'</p><div class="acts"><a class="yt" href="'+r.video+'" target="_blank" rel="noopener">▶ Room Video</a><a class="wa" href="https://wa.me/'+WA+'?text='+msg+'" target="_blank" rel="noopener">WhatsApp</a></div></div>';
-     }).join("");
-     var el=document.createElement("div");
-     el.className="card reveal";el.style.transitionDelay=(i%3)*120+"ms";
-     el.innerHTML='<div class="banner" style="background:linear-gradient(135deg,'+h.c+')">'+h.icon+'</div><div class="body"><h3>'+h.name+'</h3><div class="meta">'+h.city+' · '+"★".repeat(h.stars)+'</div><p>'+h.desc+'</p><div class="tags">'+h.tags.map(function(t){return '<span>'+t+'</span>'}).join("")+'</div><button class="toggle">View Rooms</button><div class="rooms">'+rooms+'</div></div>';
-     var btn=el.querySelector(".toggle"),box=el.querySelector(".rooms");
-     btn.onclick=function(){var open=box.style.maxHeight&&box.style.maxHeight!=="0px";box.style.maxHeight=open?"0px":box.scrollHeight+"px";btn.textContent=open?"View Rooms":"Hide Rooms"};
-     g.appendChild(el);
-    });
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target)}})},{threshold:.15});
-    document.querySelectorAll(".reveal").forEach(function(n){io.observe(n)});
-    </script>
-    </body>
-    </html>
-    
+    <script src="./assets/js/content.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+  </body>
+</html>
