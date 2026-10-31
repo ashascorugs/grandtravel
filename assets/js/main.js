@@ -53,11 +53,12 @@
   /* ---------- Header, progress bar, mobile menu ---------- */
   function initChrome() {
     var header = $("header"), bar = $("[data-progress]");
-    var on = "bg-ink/85 py-2 shadow-lg shadow-ink/40 backdrop-blur-md".split(" ");
+    var on = "py-2 backdrop-blur-md".split(" ");
     function onScroll() {
       var y = window.scrollY, h = document.documentElement.scrollHeight - window.innerHeight;
       if (header) {
         header.classList.toggle("py-4", y <= 40);
+        header.classList.toggle("is-scrolled", y > 40);
         on.forEach(function (c) { header.classList.toggle(c, y > 40); });
       }
       if (bar) bar.style.transform = "scaleX(" + (h > 0 ? y / h : 0) + ")";
@@ -67,23 +68,84 @@
 
     var btn = $('button[aria-label="Open menu"]');
     if (!btn) return;
-    var links = $$("header nav a").map(function (a) {
-      return '<a href="' + a.getAttribute("href") + '"' +
-        (a.hasAttribute("data-status") ? ' class="active"' : "") + ">" + a.textContent.trim() + "</a>";
-    }).join("");
     var menu = document.createElement("div");
     menu.className = "gt-menu";
-    menu.innerHTML = '<button class="gt-menu-close" aria-label="Close menu">&times;</button><nav aria-label="Mobile">' + links + "</nav>";
+    menu.id = "gt-menu";
+    menu.setAttribute("aria-hidden", "true");
+    var progress = document.createElement("div");
+    progress.className = "gt-menu-progress";
+    progress.setAttribute("aria-hidden", "true");
+    progress.innerHTML = "<span></span>";
+    var nav = document.createElement("nav");
+    nav.setAttribute("aria-label", "Mobile");
+    $$("header nav a").forEach(function (a, index) {
+      var link = document.createElement("a");
+      link.href = a.getAttribute("href");
+      link.style.animationDelay = (0.09 + index * 0.085) + "s";
+      if (a.hasAttribute("data-status")) link.classList.add("active");
+      var number = document.createElement("span");
+      number.className = "gt-menu-number";
+      number.textContent = String(index + 1).padStart(2, "0");
+      var label = document.createElement("span");
+      label.className = "gt-menu-label";
+      label.textContent = a.textContent.trim();
+      var rule = document.createElement("span");
+      rule.className = "gt-menu-rule";
+      rule.setAttribute("aria-hidden", "true");
+      link.appendChild(number);
+      link.appendChild(label);
+      link.appendChild(rule);
+      nav.appendChild(link);
+    });
+    menu.appendChild(progress);
+    menu.appendChild(nav);
     document.body.appendChild(menu);
     function set(open) {
       menu.classList.toggle("open", open);
+      menu.setAttribute("aria-hidden", String(!open));
+      btn.classList.toggle("is-open", open);
+      btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      btn.setAttribute("aria-expanded", String(open));
+      document.documentElement.classList.toggle("gt-menu-open", open);
       document.body.style.overflow = open ? "hidden" : "";
+      if (open) setTimeout(function () { var first = $("nav a", menu); if (first) first.focus(); }, 100);
+      else if (menu.contains(document.activeElement)) btn.focus();
     }
-    btn.addEventListener("click", function () { set(true); });
+    btn.setAttribute("aria-controls", menu.id);
+    btn.addEventListener("click", function () { set(!menu.classList.contains("open")); });
     menu.addEventListener("click", function (e) {
-      if (e.target.closest("a") || e.target.closest(".gt-menu-close")) set(false);
+      if (e.target === menu || e.target.closest("a")) set(false);
     });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") set(false); });
+  }
+
+  /* ---------- One-time brand intro ---------- */
+  function initIntro() {
+    var intro = $("[data-site-intro]");
+    var root = document.documentElement;
+    if (!intro) return;
+    if (!root.classList.contains("gt-intro-pending") || reduce) {
+      root.classList.remove("gt-intro-pending");
+      intro.remove();
+      return;
+    }
+    var start = Date.now(), finished = false;
+    function finish() {
+      if (finished) return;
+      finished = true;
+      clearTimeout(fallback);
+      var delay = Math.max(250, 1350 - (Date.now() - start));
+      setTimeout(function () {
+        intro.classList.add("is-exiting");
+        setTimeout(function () {
+          intro.remove();
+          root.classList.remove("gt-intro-pending");
+        }, 850);
+      }, delay);
+    }
+    var fallback = setTimeout(finish, 3200);
+    if (document.readyState === "complete") finish();
+    else window.addEventListener("load", finish, { once: true });
   }
 
   /* ---------- Hero slider ---------- */
@@ -222,6 +284,80 @@
     });
   }
 
+  /* ---------- Destination image quick view ---------- */
+  function initDestinationQuickView() {
+    var grid = $("[data-destination-grid]");
+    if (grid) {
+      var anchors = $$(":scope > div > a", grid);
+      var images = anchors.map(function (a) { return $("img", a); });
+      var items = images.map(function (img) {
+        return { src: img.getAttribute("src"), title: img.alt };
+      });
+      anchors.forEach(function (anchor, index) {
+        var details = document.createElement("a");
+        details.href = anchor.getAttribute("href");
+        details.className = "destination-details-link";
+        details.textContent = "Explore destination ↗";
+        details.setAttribute("aria-label", "Explore " + images[index].alt + " destination");
+
+        var button = document.createElement("button");
+        button.type = "button";
+        button.className = anchor.className;
+        button.innerHTML = anchor.innerHTML;
+        button.dataset.quickView = "";
+        button.dataset.cursor = "view";
+        button.setAttribute("aria-label", "View " + images[index].alt + " image");
+        button.addEventListener("click", function () { openLightbox(items, index); });
+        anchor.replaceWith(button);
+        button.parentNode.appendChild(details);
+      });
+    }
+
+    var detailImages = $$("[data-destination-image]");
+    if (detailImages.length) {
+      var detailItems = detailImages.map(function (el) {
+        var img = $("img", el);
+        return { src: img.getAttribute("src"), title: img.alt };
+      });
+      detailImages.forEach(function (el, index) {
+        el.setAttribute("role", "button");
+        el.tabIndex = 0;
+        el.dataset.cursor = "view";
+        el.setAttribute("aria-label", "View " + detailItems[index].title + " image");
+        el.addEventListener("click", function () { openLightbox(detailItems, index); });
+        el.addEventListener("keydown", function (event) {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openLightbox(detailItems, index);
+          }
+        });
+      });
+    }
+  }
+
+  /* ---------- Gold cursor for mouse and trackpad ---------- */
+  function initGoldCursor() {
+    if (!window.matchMedia("(pointer: fine)").matches) return;
+    var cursor = document.createElement("div");
+    cursor.className = "gold-cursor";
+    cursor.setAttribute("aria-hidden", "true");
+    cursor.innerHTML = "<span>View Image</span>";
+    document.body.appendChild(cursor);
+    document.body.classList.add("has-cursor");
+
+    document.addEventListener("pointermove", function (event) {
+      if (event.pointerType && event.pointerType !== "mouse") return;
+      cursor.style.transform = "translate3d(" + event.clientX + "px," + event.clientY + "px,0) translate(-50%,-50%)";
+      cursor.classList.add("is-visible");
+      var target = event.target.closest("[data-quick-view], [data-destination-image], button[aria-label^='Open '], a, button, [role='button']");
+      var view = target && target.matches("[data-quick-view], [data-destination-image], button[aria-label^='Open ']");
+      cursor.classList.toggle("is-view", !!view);
+      cursor.classList.toggle("is-link", !!target && !view);
+    }, { passive: true });
+    document.addEventListener("pointerleave", function () { cursor.classList.remove("is-visible"); });
+    window.addEventListener("blur", function () { cursor.classList.remove("is-visible"); });
+  }
+
   /* ---------- Package filter tabs ---------- */
   function initPackages() {
     var tabs = $$('[role="tab"]');
@@ -282,10 +418,57 @@
     });
   }
 
+  /* ---------- Contact details and office map ---------- */
+  function initContactDetails() {
+    var contact = D.contact;
+    if (!contact) return;
+    var fields = $$('[data-contact-value]');
+    fields.forEach(function (el) {
+      var key = el.dataset.contactValue;
+      if (contact[key]) el.textContent = contact[key];
+    });
+    $$('[data-contact-link="phone"]').forEach(function (el) {
+      if (contact.phone) el.href = "tel:" + contact.phone.replace(/[^+\d]/g, "");
+    });
+    $$('[data-contact-link="whatsapp"]').forEach(function (el) {
+      if (contact.whatsapp) el.href = "https://wa.me/" + contact.whatsapp.replace(/\D/g, "");
+    });
+    $$('[data-contact-link="email"]').forEach(function (el) {
+      if (contact.email) el.href = "mailto:" + contact.email;
+    });
+
+    var mapQuery = contact.mapQuery || contact.address;
+    var mapFrame = $("[data-map-frame]");
+    var mapLink = $("[data-map-directions]");
+    if (mapQuery && mapFrame) {
+      mapFrame.src = "https://maps.google.com/maps?q=" + encodeURIComponent(mapQuery) + "&output=embed";
+      if (mapLink) mapLink.href = contact.mapUrl || "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(mapQuery);
+    }
+    $$('[data-contact-link="address"]').forEach(function (el) {
+      if (mapQuery) el.href = contact.mapUrl || "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(mapQuery);
+    });
+  }
+
   function init() {
-    [initReveal, initCounters, initChrome, initHero, initGallery, initPackages, initForms].forEach(function (fn) {
+    [initIntro, initReveal, initCounters, initChrome, initHero, initGallery, initDestinationQuickView, initPackages, initForms, initContactDetails, initGoldCursor].forEach(function (fn) {
       try { fn(); } catch (err) { console.error(fn.name, err); }
     });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
 })();
+
+
+/* Continuous testimonial marquee */
+(() => {
+        const track = document.querySelector('[data-testimonial-track]');
+        const originalSet = document.querySelector('[data-testimonial-set]');
+        if (!track || !originalSet) return;
+
+        const duplicateSet = originalSet.cloneNode(true);
+        duplicateSet.removeAttribute('data-testimonial-set');
+        duplicateSet.setAttribute('aria-hidden', 'true');
+        duplicateSet.querySelectorAll('[data-reveal]').forEach((element) => {
+          element.removeAttribute('data-reveal');
+        });
+        track.appendChild(duplicateSet);
+      })();

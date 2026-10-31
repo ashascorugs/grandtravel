@@ -1,58 +1,30 @@
 <!doctype html>
-<html
-  lang="en"
-  class="bg-ink"
->
+<html lang="en" class="bg-ink">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Hajj &amp; Umrah Packages | Grand Travel &amp; Tours</title>
-    <meta
-      name="description"
-      content="Browse Ramadan Umrah, Hajj, Makkah and Madinah packages with hotels, transport and guidance included."
-    />
-    <meta
-      property="og:title"
-      content="Hajj &amp; Umrah Packages — Grand Travel &amp; Tours"
-    />
-    <meta
-      property="og:description"
-      content="Premium pilgrimage packages for every budget and season."
-    />
-    <meta
-      property="og:type"
-      content="website"
-    />
-    <meta
-      name="twitter:card"
-      content="summary_large_image"
-    />
-    <meta
-      property="og:site_name"
-      content="Grand Travel & Tours"
-    />
-    <link
-      rel="icon"
-      href="./favicon.png"
-      type="image/png"
-    />
-    <link
-      rel="stylesheet"
-      href="./assets/css/fonts.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./assets/css/style.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./assets/css/extra.css"
-    />
+    <meta name="description" content="Browse Ramadan Umrah, Hajj, Makkah and Madinah packages with hotels, transport and guidance included."/>
+    <meta property="og:title" content="Hajj &amp; Umrah Packages — Grand Travel &amp; Tours"/>
+    <meta property="og:description" content="Premium pilgrimage packages for every budget and season."/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta property="og:site_name" content="Grand Travel & Tours"/>
+    <link rel="icon" href="./favicon.png" type="image/png"/>
+    <link rel="stylesheet" href="./assets/css/fonts.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/extra.css"/>
     <script>
       document.documentElement.classList.add("js");
+      try {
+        if (!sessionStorage.getItem("grandtravel-intro-v1")) {
+          document.documentElement.classList.add("gt-intro-pending");
+          sessionStorage.setItem("grandtravel-intro-v1", "1");
+        }
+      } catch (_) {
+        document.documentElement.classList.add("gt-intro-pending");
+      }
+      setTimeout(function () { document.documentElement.classList.remove("gt-intro-pending"); }, 4000);
     </script>
     <script type="application/ld+json">
       {
@@ -64,279 +36,78 @@
     </script>
   </head>
   <body>
+    <div class="gt-intro" data-site-intro aria-hidden="true">
+      <div class="gt-intro-content">
+        <img src="./assets/images/logo.png" alt=""/>
+        <div class="gt-intro-loader"><span></span></div>
+        <p>Preparing your sacred journey</p>
+      </div>
+    </div>
     <!-- Plain HTML + CSS + JavaScript version. Behaviour is in assets/js/main.js -->
     <div id="root">
-      <link
-        rel="preload"
-        as="image"
-        href="./assets/images/logo.png"
-      />
-      <link
-        rel="preload"
-        as="image"
-        href="./assets/images/mina.jpg"
-      />
-      <div
-        aria-hidden="true"
-        class="fixed inset-x-0 top-0 z-[60] h-[2px] origin-left bg-gold-gradient"
-        data-progress
-      ></div>
+      <link rel="preload" as="image" href="./assets/images/logo.png"/>
+      <link rel="preload" as="image" href="./assets/images/mina.jpg"/>
+      <div aria-hidden="true" class="fixed inset-x-0 top-0 z-[60] h-[2px] origin-left bg-gold-gradient" data-progress></div>
       <!-- HEADER AND NAVIGATION -->
-      <header
-        class="fixed inset-x-0 top-0 z-50 transition-all duration-500 py-4"
-      >
+      <header class="fixed inset-x-0 top-0 z-50 transition-all duration-500 py-4">
         <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 lg:px-8">
-          <a
-            aria-label="Grand Travel home"
-            class="shrink-0"
-            href="index.html"
-          >
-            <img
-              src="./assets/images/logo.png"
-              alt="Grand Travel"
-              class="h-10 w-auto lg:h-12"
-            />
-          </a>
-          <nav
-            aria-label="Main"
-            class="hidden items-center gap-1 rounded-full border border-foreground/15 bg-ink/30 px-3 py-1.5 backdrop-blur-md lg:flex"
-          >
-            <div
-              class="inline-block"
-            >
-              <a
-                data-cursor="link"
-                class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold"
-                href="index.html"
-              >
-                Home
-                <span
-                  class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
-                ></span>
-              </a>
+          <a aria-label="Grand Travel home" class="shrink-0" href="index.html">
+            <img src="./assets/images/logo.png" alt="Grand Travel" class="h-10 w-auto lg:h-12"/></a>
+          <nav aria-label="Main" class="hidden items-center gap-1 rounded-full border border-foreground/15 bg-ink/30 px-3 py-1.5 backdrop-blur-md lg:flex">
+            <div class="inline-block">
+              <a data-cursor="link" class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold" href="index.html"> Home
+                <span class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a>
             </div>
-            <div
-              class="inline-block"
-            >
-              <a
-                data-cursor="link"
-                class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold"
-                href="about.html"
-              >
-                About Us
-                <span
-                  class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
-                ></span>
-              </a>
+            <div class="inline-block">
+              <a data-cursor="link" class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold" href="about.html"> About Us
+                <span class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a>
             </div>
-            <div
-              class="inline-block"
-            >
-              <a
-                data-cursor="link"
-                class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold"
-                href="packages.html"
-                data-status="active"
-                aria-current="page"
-              >
-                Packages
-                <span
-                  class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
-                ></span>
-              </a>
+            <div class="inline-block">
+              <a data-cursor="link" class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold" href="packages.html" data-status="active" aria-current="page"> Packages
+                <span class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a>
             </div>
-            <div
-              class="inline-block"
-            >
-              <a
-                data-cursor="link"
-                class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold"
-                href="destinations.html"
-              >
-                Destinations
-                <span
-                  class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
-                ></span>
-              </a>
+            <div class="inline-block">
+              <a data-cursor="link" class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold" href="destinations.html"> Destinations
+                <span class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a>
             </div>
-            <div
-              class="inline-block"
-            >
-              <a
-                data-cursor="link"
-                class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold"
-                href="gallery.html"
-              >
-                Gallery
-                <span
-                  class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
-                ></span>
-              </a>
+            <div class="inline-block">
+              <a data-cursor="link" class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold" href="gallery.html"> Gallery
+                <span class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a>
             </div>
-            <div
-              class="inline-block"
-            >
-              <a
-                data-cursor="link"
-                class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold"
-                href="contact.html"
-              >
-                Contact Us
-                <span
-                  class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"
-                ></span>
-              </a>
+            <div class="inline-block">
+              <a data-cursor="link" class="group relative block px-4 py-1.5 text-[13px] font-medium text-foreground/75 transition-colors hover:text-foreground data-[status=active]:text-gold" href="contact.html"> Contact Us
+                <span class="absolute inset-x-4 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100 group-data-[status=active]:scale-x-100"></span></a>
             </div>
           </nav>
           <div class="items-center gap-2 hidden xl:flex">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Facebook"
-              data-cursor="link"
-              class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-facebook"
-                aria-hidden="true"
-              >
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook" data-cursor="link" class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook" aria-hidden="true">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
               </svg>
             </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram"
-              data-cursor="link"
-              class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-instagram"
-                aria-hidden="true"
-              >
-                <rect
-                  width="20"
-                  height="20"
-                  x="2"
-                  y="2"
-                  rx="5"
-                  ry="5"
-                ></rect>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram" data-cursor="link" class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram" aria-hidden="true">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line
-                  x1="17.5"
-                  x2="17.51"
-                  y1="6.5"
-                  y2="6.5"
-                ></line>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
               </svg>
             </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
-              data-cursor="link"
-              class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-linkedin"
-                aria-hidden="true"
-              >
-                <path
-                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                ></path>
-                <rect
-                  width="4"
-                  height="12"
-                  x="2"
-                  y="9"
-                ></rect>
-                <circle
-                  cx="4"
-                  cy="4"
-                  r="2"
-                ></circle>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn" data-cursor="link" class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
               </svg>
             </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="YouTube"
-              data-cursor="link"
-              class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-youtube"
-                aria-hidden="true"
-              >
-                <path
-                  d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
-                ></path>
+            <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube" data-cursor="link" class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube" aria-hidden="true">
+                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
                 <path d="m10 15 5-3-5-3z"></path>
               </svg>
             </a>
           </div>
-          <button
-            aria-label="Open menu"
-            class="grid h-11 w-11 place-items-center rounded-full border border-gold/50 text-gold lg:hidden"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-menu"
-              aria-hidden="true"
-            >
-              <path d="M4 5h16"></path>
-              <path d="M4 12h16"></path>
-              <path d="M4 19h16"></path>
-            </svg>
+                    <button type="button" aria-label="Open menu" aria-expanded="false" aria-controls="gt-menu" class="gt-menu-trigger lg:hidden" data-cursor="link">
+            <span></span><span></span><span></span>
           </button>
         </div>
       </header>
@@ -344,40 +115,18 @@
       <main>
         <!-- PAGE HERO -->
         <section class="relative flex min-h-[78vh] items-end overflow-hidden pb-24 pt-40">
-          <img
-            src="./assets/images/mina.jpg"
-            alt=""
-            class="absolute inset-0 h-full w-full object-cover"
-            style="transform: scale(1.15)"
-          />
+          <img src="./assets/images/mina.jpg" alt="" class="absolute inset-0 h-full w-full object-cover" style="transform: scale(1.15)"/>
           <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-ink/30"></div>
           <div class="relative mx-auto w-full max-w-7xl px-5 lg:px-8">
-            <p
-              class="font-serif text-xs uppercase text-gold" data-reveal="fade"
-            >
-              Our Packages
-            </p>
+            <p class="font-serif text-xs uppercase text-gold" data-reveal="fade"> Our Packages </p>
             <h1 class="mt-4 font-display text-6xl leading-[0.9] md:text-8xl lg:text-9xl">
               <span class="block overflow-hidden">
-                <span
-                  class="block" data-reveal="mask"
-                >
-                  Hajj &amp; Umrah
-                </span>
-              </span>
+                <span class="block" data-reveal="mask"> Hajj &amp; Umrah </span></span>
               <span class="block overflow-hidden">
-                <span
-                  class="block text-gold-gradient" data-reveal="mask"
-                >
-                  Packages
-                </span>
-              </span>
+                <span class="block text-gold-gradient" data-reveal="mask"> Packages </span></span>
             </h1>
-            <p
-              class="mt-6 max-w-xl text-foreground/80" data-reveal="up"
-            >
-              Carefully curated journeys with hotels near the Haramain, reliable transport and
-              expert guides.
+            <p class="mt-6 max-w-xl text-foreground/80" data-reveal="up">
+              Carefully curated journeys with hotels near the Haramain, reliable transport and expert guides.
             </p>
           </div>
         </section>
@@ -385,89 +134,28 @@
         <!-- PACKAGE FILTERS AND CARDS -->
         <section class="bg-ink py-20">
           <div class="mx-auto max-w-7xl px-5 lg:px-8">
-            <div
-              role="tablist"
-              aria-label="Package categories"
-              class="flex flex-wrap justify-center gap-2"
-            >
-              <button
-                role="tab"
-                aria-selected="true"
-                class="relative rounded-full border px-5 py-2 text-sm transition-colors border-gold text-primary-foreground"
-              >
+            <div role="tablist" aria-label="Package categories" class="flex flex-wrap justify-center gap-2">
+              <button role="tab" aria-selected="true" class="relative rounded-full border px-5 py-2 text-sm transition-colors border-gold text-primary-foreground">
                 <span class="absolute inset-0 rounded-full bg-gold-gradient"></span>
-                <span class="relative">All</span>
-              </button>
-              <button
-                role="tab"
-                aria-selected="false"
-                class="relative rounded-full border px-5 py-2 text-sm transition-colors border-foreground/20 text-foreground/75 hover:border-gold/60"
-              >
-                <span class="relative">Umrah</span>
-              </button>
-              <button
-                role="tab"
-                aria-selected="false"
-                class="relative rounded-full border px-5 py-2 text-sm transition-colors border-foreground/20 text-foreground/75 hover:border-gold/60"
-              >
-                <span class="relative">Ramadan Umrah</span>
-              </button>
-              <button
-                role="tab"
-                aria-selected="false"
-                class="relative rounded-full border px-5 py-2 text-sm transition-colors border-foreground/20 text-foreground/75 hover:border-gold/60"
-              >
-                <span class="relative">Hajj</span>
-              </button>
-              <button
-                role="tab"
-                aria-selected="false"
-                class="relative rounded-full border px-5 py-2 text-sm transition-colors border-foreground/20 text-foreground/75 hover:border-gold/60"
-              >
-                <span class="relative">Makkah</span>
-              </button>
-              <button
-                role="tab"
-                aria-selected="false"
-                class="relative rounded-full border px-5 py-2 text-sm transition-colors border-foreground/20 text-foreground/75 hover:border-gold/60"
-              >
-                <span class="relative">Madinah</span>
-              </button>
+                <span class="relative">All</span></button>
+              <button role="tab" aria-selected="false" class="relative rounded-full border px-5 py-2 text-sm transition-colors border-foreground/20 text-foreground/75 hover:border-gold/60">
+                <span class="relative">Umrah</span></button>
+              <button role="tab" aria-selected="false" class="relative rounded-full border px-5 py-2 text-sm transition-colors border-foreground/20 text-foreground/75 hover:border-gold/60">
+                <span class="relative">Ramadan Umrah</span></button>
+              <button role="tab" aria-selected="false" class="relative rounded-full border px-5 py-2 text-sm transition-colors border-foreground/20 text-foreground/75 hover:border-gold/60">
+                <span class="relative">Hajj</span></button>
+              <button role="tab" aria-selected="false" class="relative rounded-full border px-5 py-2 text-sm transition-colors border-foreground/20 text-foreground/75 hover:border-gold/60">
+                <span class="relative">Makkah</span></button>
+              <button role="tab" aria-selected="false" class="relative rounded-full border px-5 py-2 text-sm transition-colors border-foreground/20 text-foreground/75 hover:border-gold/60">
+                <span class="relative">Madinah</span></button>
             </div>
             <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              <article
-                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
-              >
-                <a
-                  data-cursor="view"
-                  class="block"
-                  href="packages.html"
-                  data-status="active"
-                  aria-current="page"
-                >
+              <article class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up">
+                <a data-cursor="view" class="block" href="packages.html" data-status="active" aria-current="page">
                   <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
-                    <img
-                      src="./assets/images/kaaba-night.jpg"
-                      alt="Ramadan Umrah Package"
-                      loading="lazy"
-                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                    />
-                    <span
-                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-up-right"
-                        aria-hidden="true"
-                      >
+                    <img src="./assets/images/kaaba-night.jpg" alt="Ramadan Umrah Package" loading="lazy" class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"/>
+                    <span class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>
@@ -475,91 +163,29 @@
                   </div>
                   <div class="px-2 pb-2 pt-4">
                     <h3 class="font-display text-xl tracking-wide">Ramadan Umrah Package</h3>
-                    <p class="mt-1 text-sm font-semibold">
-                      2 Lakh 50,000
-                      <!-- -->
-                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
-                    </p>
+                    <p class="mt-1 text-sm font-semibold"> 2 Lakh 50,000 <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span></p>
                     <ul class="mt-3 space-y-1 text-xs text-muted-foreground">
-                      <li>
-                        🏨
-                        <!-- -->
-                        5★ Haram View
-                      </li>
-                      <li>
-                        🚐
-                        <!-- -->
-                        Private GMC
-                      </li>
-                      <li>
-                        📍
-                        <!-- -->
-                        150m from Haram
-                      </li>
+                      <li> 🏨 <!-- --> 5★ Haram View </li>
+                      <li> 🚐 <!-- --> Private GMC </li>
+                      <li> 📍 <!-- --> 150m from Haram </li>
                     </ul>
-                    <div
-                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-clock text-gold"
-                        aria-hidden="true"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                        ></circle>
+                    <div class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-gold" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
                         <path d="M12 6v6l4 2"></path>
                       </svg>
-                      20
-                      <!-- -->
-                      DAYS
+                      20 <!-- --> DAYS
                     </div>
                   </div>
                 </a>
               </article>
-              <article
-                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
-              >
-                <a
-                  data-cursor="view"
-                  class="block"
-                  href="packages.html"
-                  data-status="active"
-                  aria-current="page"
-                >
+              <article class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up">
+                <a data-cursor="view" class="block" href="packages.html" data-status="active" aria-current="page">
                   <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
-                    <img
-                      src="./assets/images/madinah.jpg"
-                      alt="November Umrah Package"
-                      loading="lazy"
-                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                    />
-                    <span
-                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-up-right"
-                        aria-hidden="true"
-                      >
+                    <img src="./assets/images/madinah.jpg" alt="November Umrah Package" loading="lazy" class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"/>
+                    <span class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>
@@ -567,91 +193,29 @@
                   </div>
                   <div class="px-2 pb-2 pt-4">
                     <h3 class="font-display text-xl tracking-wide">November Umrah Package</h3>
-                    <p class="mt-1 text-sm font-semibold">
-                      2 Lakh 50,000
-                      <!-- -->
-                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
-                    </p>
+                    <p class="mt-1 text-sm font-semibold"> 2 Lakh 50,000 <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span></p>
                     <ul class="mt-3 space-y-1 text-xs text-muted-foreground">
-                      <li>
-                        🏨
-                        <!-- -->
-                        4★ Markazia
-                      </li>
-                      <li>
-                        🚐
-                        <!-- -->
-                        Shared Coach
-                      </li>
-                      <li>
-                        📍
-                        <!-- -->
-                        300m from Masjid Nabawi
-                      </li>
+                      <li> 🏨 <!-- --> 4★ Markazia </li>
+                      <li> 🚐 <!-- --> Shared Coach </li>
+                      <li> 📍 <!-- --> 300m from Masjid Nabawi </li>
                     </ul>
-                    <div
-                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-clock text-gold"
-                        aria-hidden="true"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                        ></circle>
+                    <div class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-gold" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
                         <path d="M12 6v6l4 2"></path>
                       </svg>
-                      15
-                      <!-- -->
-                      DAYS
+                      15 <!-- --> DAYS
                     </div>
                   </div>
                 </a>
               </article>
-              <article
-                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
-              >
-                <a
-                  data-cursor="view"
-                  class="block"
-                  href="packages.html"
-                  data-status="active"
-                  aria-current="page"
-                >
+              <article class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up">
+                <a data-cursor="view" class="block" href="packages.html" data-status="active" aria-current="page">
                   <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
-                    <img
-                      src="./assets/images/makkah.jpg"
-                      alt="September Umrah Package"
-                      loading="lazy"
-                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                    />
-                    <span
-                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-up-right"
-                        aria-hidden="true"
-                      >
+                    <img src="./assets/images/makkah.jpg" alt="September Umrah Package" loading="lazy" class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"/>
+                    <span class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>
@@ -659,91 +223,29 @@
                   </div>
                   <div class="px-2 pb-2 pt-4">
                     <h3 class="font-display text-xl tracking-wide">September Umrah Package</h3>
-                    <p class="mt-1 text-sm font-semibold">
-                      2 Lakh 50,000
-                      <!-- -->
-                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
-                    </p>
+                    <p class="mt-1 text-sm font-semibold"> 2 Lakh 50,000 <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span></p>
                     <ul class="mt-3 space-y-1 text-xs text-muted-foreground">
-                      <li>
-                        🏨
-                        <!-- -->
-                        5★ Clock Tower
-                      </li>
-                      <li>
-                        🚐
-                        <!-- -->
-                        Private Car
-                      </li>
-                      <li>
-                        📍
-                        <!-- -->
-                        100m from Haram
-                      </li>
+                      <li> 🏨 <!-- --> 5★ Clock Tower </li>
+                      <li> 🚐 <!-- --> Private Car </li>
+                      <li> 📍 <!-- --> 100m from Haram </li>
                     </ul>
-                    <div
-                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-clock text-gold"
-                        aria-hidden="true"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                        ></circle>
+                    <div class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-gold" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
                         <path d="M12 6v6l4 2"></path>
                       </svg>
-                      10
-                      <!-- -->
-                      DAYS
+                      10 <!-- --> DAYS
                     </div>
                   </div>
                 </a>
               </article>
-              <article
-                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
-              >
-                <a
-                  data-cursor="view"
-                  class="block"
-                  href="packages.html"
-                  data-status="active"
-                  aria-current="page"
-                >
+              <article class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up">
+                <a data-cursor="view" class="block" href="packages.html" data-status="active" aria-current="page">
                   <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
-                    <img
-                      src="./assets/images/mina.jpg"
-                      alt="Hajj Packages"
-                      loading="lazy"
-                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                    />
-                    <span
-                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-up-right"
-                        aria-hidden="true"
-                      >
+                    <img src="./assets/images/mina.jpg" alt="Hajj Packages" loading="lazy" class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"/>
+                    <span class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>
@@ -751,91 +253,29 @@
                   </div>
                   <div class="px-2 pb-2 pt-4">
                     <h3 class="font-display text-xl tracking-wide">Hajj Packages</h3>
-                    <p class="mt-1 text-sm font-semibold">
-                      2 Lakh 50,000
-                      <!-- -->
-                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
-                    </p>
+                    <p class="mt-1 text-sm font-semibold"> 2 Lakh 50,000 <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span></p>
                     <ul class="mt-3 space-y-1 text-xs text-muted-foreground">
-                      <li>
-                        🏨
-                        <!-- -->
-                        Premium Mina Tents
-                      </li>
-                      <li>
-                        🚐
-                        <!-- -->
-                        VIP Coach
-                      </li>
-                      <li>
-                        📍
-                        <!-- -->
-                        Mina Zone A
-                      </li>
+                      <li> 🏨 <!-- --> Premium Mina Tents </li>
+                      <li> 🚐 <!-- --> VIP Coach </li>
+                      <li> 📍 <!-- --> Mina Zone A </li>
                     </ul>
-                    <div
-                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-clock text-gold"
-                        aria-hidden="true"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                        ></circle>
+                    <div class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-gold" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
                         <path d="M12 6v6l4 2"></path>
                       </svg>
-                      20
-                      <!-- -->
-                      DAYS
+                      20 <!-- --> DAYS
                     </div>
                   </div>
                 </a>
               </article>
-              <article
-                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
-              >
-                <a
-                  data-cursor="view"
-                  class="block"
-                  href="packages.html"
-                  data-status="active"
-                  aria-current="page"
-                >
+              <article class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up">
+                <a data-cursor="view" class="block" href="packages.html" data-status="active" aria-current="page">
                   <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
-                    <img
-                      src="./assets/images/kaaba-night.jpg"
-                      alt="Last Ashra Ramadan"
-                      loading="lazy"
-                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                    />
-                    <span
-                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-up-right"
-                        aria-hidden="true"
-                      >
+                    <img src="./assets/images/kaaba-night.jpg" alt="Last Ashra Ramadan" loading="lazy" class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"/>
+                    <span class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>
@@ -843,91 +283,29 @@
                   </div>
                   <div class="px-2 pb-2 pt-4">
                     <h3 class="font-display text-xl tracking-wide">Last Ashra Ramadan</h3>
-                    <p class="mt-1 text-sm font-semibold">
-                      3 Lakh 10,000
-                      <!-- -->
-                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
-                    </p>
+                    <p class="mt-1 text-sm font-semibold"> 3 Lakh 10,000 <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span></p>
                     <ul class="mt-3 space-y-1 text-xs text-muted-foreground">
-                      <li>
-                        🏨
-                        <!-- -->
-                        5★ Haram View
-                      </li>
-                      <li>
-                        🚐
-                        <!-- -->
-                        Private GMC
-                      </li>
-                      <li>
-                        📍
-                        <!-- -->
-                        50m from Haram
-                      </li>
+                      <li> 🏨 <!-- --> 5★ Haram View </li>
+                      <li> 🚐 <!-- --> Private GMC </li>
+                      <li> 📍 <!-- --> 50m from Haram </li>
                     </ul>
-                    <div
-                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-clock text-gold"
-                        aria-hidden="true"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                        ></circle>
+                    <div class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-gold" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
                         <path d="M12 6v6l4 2"></path>
                       </svg>
-                      12
-                      <!-- -->
-                      DAYS
+                      12 <!-- --> DAYS
                     </div>
                   </div>
                 </a>
               </article>
-              <article
-                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
-              >
-                <a
-                  data-cursor="view"
-                  class="block"
-                  href="packages.html"
-                  data-status="active"
-                  aria-current="page"
-                >
+              <article class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up">
+                <a data-cursor="view" class="block" href="packages.html" data-status="active" aria-current="page">
                   <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
-                    <img
-                      src="./assets/images/madinah.jpg"
-                      alt="December Umrah Package"
-                      loading="lazy"
-                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                    />
-                    <span
-                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-up-right"
-                        aria-hidden="true"
-                      >
+                    <img src="./assets/images/madinah.jpg" alt="December Umrah Package" loading="lazy" class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"/>
+                    <span class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>
@@ -935,91 +313,29 @@
                   </div>
                   <div class="px-2 pb-2 pt-4">
                     <h3 class="font-display text-xl tracking-wide">December Umrah Package</h3>
-                    <p class="mt-1 text-sm font-semibold">
-                      2 Lakh 20,000
-                      <!-- -->
-                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
-                    </p>
+                    <p class="mt-1 text-sm font-semibold"> 2 Lakh 20,000 <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span></p>
                     <ul class="mt-3 space-y-1 text-xs text-muted-foreground">
-                      <li>
-                        🏨
-                        <!-- -->
-                        4★ Central
-                      </li>
-                      <li>
-                        🚐
-                        <!-- -->
-                        Shared Coach
-                      </li>
-                      <li>
-                        📍
-                        <!-- -->
-                        250m from Masjid Nabawi
-                      </li>
+                      <li> 🏨 <!-- --> 4★ Central </li>
+                      <li> 🚐 <!-- --> Shared Coach </li>
+                      <li> 📍 <!-- --> 250m from Masjid Nabawi </li>
                     </ul>
-                    <div
-                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-clock text-gold"
-                        aria-hidden="true"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                        ></circle>
+                    <div class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-gold" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
                         <path d="M12 6v6l4 2"></path>
                       </svg>
-                      15
-                      <!-- -->
-                      DAYS
+                      15 <!-- --> DAYS
                     </div>
                   </div>
                 </a>
               </article>
-              <article
-                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
-              >
-                <a
-                  data-cursor="view"
-                  class="block"
-                  href="packages.html"
-                  data-status="active"
-                  aria-current="page"
-                >
+              <article class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up">
+                <a data-cursor="view" class="block" href="packages.html" data-status="active" aria-current="page">
                   <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
-                    <img
-                      src="./assets/images/makkah.jpg"
-                      alt="Family Umrah Package"
-                      loading="lazy"
-                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                    />
-                    <span
-                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-up-right"
-                        aria-hidden="true"
-                      >
+                    <img src="./assets/images/makkah.jpg" alt="Family Umrah Package" loading="lazy" class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"/>
+                    <span class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>
@@ -1027,91 +343,29 @@
                   </div>
                   <div class="px-2 pb-2 pt-4">
                     <h3 class="font-display text-xl tracking-wide">Family Umrah Package</h3>
-                    <p class="mt-1 text-sm font-semibold">
-                      2 Lakh 80,000
-                      <!-- -->
-                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
-                    </p>
+                    <p class="mt-1 text-sm font-semibold"> 2 Lakh 80,000 <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span></p>
                     <ul class="mt-3 space-y-1 text-xs text-muted-foreground">
-                      <li>
-                        🏨
-                        <!-- -->
-                        5★ Family Suites
-                      </li>
-                      <li>
-                        🚐
-                        <!-- -->
-                        Private Van
-                      </li>
-                      <li>
-                        📍
-                        <!-- -->
-                        200m from Haram
-                      </li>
+                      <li> 🏨 <!-- --> 5★ Family Suites </li>
+                      <li> 🚐 <!-- --> Private Van </li>
+                      <li> 📍 <!-- --> 200m from Haram </li>
                     </ul>
-                    <div
-                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-clock text-gold"
-                        aria-hidden="true"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                        ></circle>
+                    <div class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-gold" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
                         <path d="M12 6v6l4 2"></path>
                       </svg>
-                      14
-                      <!-- -->
-                      DAYS
+                      14 <!-- --> DAYS
                     </div>
                   </div>
                 </a>
               </article>
-              <article
-                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
-              >
-                <a
-                  data-cursor="view"
-                  class="block"
-                  href="packages.html"
-                  data-status="active"
-                  aria-current="page"
-                >
+              <article class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up">
+                <a data-cursor="view" class="block" href="packages.html" data-status="active" aria-current="page">
                   <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
-                    <img
-                      src="./assets/images/jabal-noor.jpg"
-                      alt="VIP Hajj Package"
-                      loading="lazy"
-                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                    />
-                    <span
-                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-up-right"
-                        aria-hidden="true"
-                      >
+                    <img src="./assets/images/jabal-noor.jpg" alt="VIP Hajj Package" loading="lazy" class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"/>
+                    <span class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>
@@ -1119,91 +373,29 @@
                   </div>
                   <div class="px-2 pb-2 pt-4">
                     <h3 class="font-display text-xl tracking-wide">VIP Hajj Package</h3>
-                    <p class="mt-1 text-sm font-semibold">
-                      9 Lakh 50,000
-                      <!-- -->
-                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
-                    </p>
+                    <p class="mt-1 text-sm font-semibold"> 9 Lakh 50,000 <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span></p>
                     <ul class="mt-3 space-y-1 text-xs text-muted-foreground">
-                      <li>
-                        🏨
-                        <!-- -->
-                        VIP Tents + 5★
-                      </li>
-                      <li>
-                        🚐
-                        <!-- -->
-                        VIP Coach
-                      </li>
-                      <li>
-                        📍
-                        <!-- -->
-                        Mina Zone A
-                      </li>
+                      <li> 🏨 <!-- --> VIP Tents + 5★ </li>
+                      <li> 🚐 <!-- --> VIP Coach </li>
+                      <li> 📍 <!-- --> Mina Zone A </li>
                     </ul>
-                    <div
-                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-clock text-gold"
-                        aria-hidden="true"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                        ></circle>
+                    <div class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-gold" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
                         <path d="M12 6v6l4 2"></path>
                       </svg>
-                      25
-                      <!-- -->
-                      DAYS
+                      25 <!-- --> DAYS
                     </div>
                   </div>
                 </a>
               </article>
-              <article
-                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
-              >
-                <a
-                  data-cursor="view"
-                  class="block"
-                  href="packages.html"
-                  data-status="active"
-                  aria-current="page"
-                >
+              <article class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up">
+                <a data-cursor="view" class="block" href="packages.html" data-status="active" aria-current="page">
                   <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
-                    <img
-                      src="./assets/images/jeddah.jpg"
-                      alt="Economy Umrah Package"
-                      loading="lazy"
-                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                    />
-                    <span
-                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-up-right"
-                        aria-hidden="true"
-                      >
+                    <img src="./assets/images/jeddah.jpg" alt="Economy Umrah Package" loading="lazy" class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"/>
+                    <span class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>
@@ -1211,91 +403,29 @@
                   </div>
                   <div class="px-2 pb-2 pt-4">
                     <h3 class="font-display text-xl tracking-wide">Economy Umrah Package</h3>
-                    <p class="mt-1 text-sm font-semibold">
-                      1 Lakh 95,000
-                      <!-- -->
-                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
-                    </p>
+                    <p class="mt-1 text-sm font-semibold"> 1 Lakh 95,000 <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span></p>
                     <ul class="mt-3 space-y-1 text-xs text-muted-foreground">
-                      <li>
-                        🏨
-                        <!-- -->
-                        3★ Aziziyah
-                      </li>
-                      <li>
-                        🚐
-                        <!-- -->
-                        Shuttle
-                      </li>
-                      <li>
-                        📍
-                        <!-- -->
-                        1.5km from Haram
-                      </li>
+                      <li> 🏨 <!-- --> 3★ Aziziyah </li>
+                      <li> 🚐 <!-- --> Shuttle </li>
+                      <li> 📍 <!-- --> 1.5km from Haram </li>
                     </ul>
-                    <div
-                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-clock text-gold"
-                        aria-hidden="true"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                        ></circle>
+                    <div class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-gold" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
                         <path d="M12 6v6l4 2"></path>
                       </svg>
-                      10
-                      <!-- -->
-                      DAYS
+                      10 <!-- --> DAYS
                     </div>
                   </div>
                 </a>
               </article>
-              <article
-                class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up"
-              >
-                <a
-                  data-cursor="view"
-                  class="block"
-                  href="packages.html"
-                  data-status="active"
-                  aria-current="page"
-                >
+              <article class="group relative overflow-hidden rounded-2xl border border-foreground/15 bg-gradient-to-b from-ink-2 to-ink p-2.5 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/70 hover:shadow-[0_20px_50px_-20px_var(--gold)]" data-reveal="up">
+                <a data-cursor="view" class="block" href="packages.html" data-status="active" aria-current="page">
                   <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
-                    <img
-                      src="./assets/images/madinah.jpg"
-                      alt="Madinah Ziyarat Tour"
-                      loading="lazy"
-                      class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                    />
-                    <span
-                      class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-up-right"
-                        aria-hidden="true"
-                      >
+                    <img src="./assets/images/madinah.jpg" alt="Madinah Ziyarat Tour" loading="lazy" class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"/>
+                    <span class="absolute right-3 top-3 grid h-9 w-9 translate-y-2 place-items-center rounded-full bg-gold text-primary-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>
@@ -1303,88 +433,38 @@
                   </div>
                   <div class="px-2 pb-2 pt-4">
                     <h3 class="font-display text-xl tracking-wide">Madinah Ziyarat Tour</h3>
-                    <p class="mt-1 text-sm font-semibold">
-                      1 Lakh 40,000
-                      <!-- -->
-                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span>
-                    </p>
+                    <p class="mt-1 text-sm font-semibold"> 1 Lakh 40,000 <!-- -->
+                      <span class="text-xs font-normal text-muted-foreground">/ Per Person</span></p>
                     <ul class="mt-3 space-y-1 text-xs text-muted-foreground">
-                      <li>
-                        🏨
-                        <!-- -->
-                        4★ Markazia
-                      </li>
-                      <li>
-                        🚐
-                        <!-- -->
-                        Private Car
-                      </li>
-                      <li>
-                        📍
-                        <!-- -->
-                        150m from Masjid Nabawi
-                      </li>
+                      <li> 🏨 <!-- --> 4★ Markazia </li>
+                      <li> 🚐 <!-- --> Private Car </li>
+                      <li> 📍 <!-- --> 150m from Masjid Nabawi </li>
                     </ul>
-                    <div
-                      class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-clock text-gold"
-                        aria-hidden="true"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                        ></circle>
+                    <div class="mt-3 flex items-center gap-2 border-t border-foreground/10 pt-3 text-xs font-bold tracking-widest">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-gold" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
                         <path d="M12 6v6l4 2"></path>
                       </svg>
-                      7
-                      <!-- -->
-                      DAYS
+                      7 <!-- --> DAYS
                     </div>
                   </div>
                 </a>
               </article>
             </div>
             <div class="mt-16 rounded-2xl border border-gold/40 bg-ink-2 p-10 text-center">
-              <h2 class="font-display text-4xl md:text-5xl">
-                Need a
+              <h2 class="font-display text-4xl md:text-5xl"> Need a
                 <span class="text-gold-gradient">custom package?</span>
               </h2>
               <p class="mx-auto mt-3 max-w-lg text-muted-foreground">
-                Tell us your dates, group size and preferences — we&#x27;ll design a journey around
-                you.
+                Tell us your dates, group size and preferences — we&#x27;ll design a journey around you.
               </p>
               <div class="mt-6">
-                <div
-                  class="inline-block"
-                >
+                <div class="inline-block">
                   <a href="contact.html">
-                    <span
-                      data-cursor="button"
-                      class="group relative inline-flex items-center gap-3 overflow-hidden rounded-full border border-gold px-6 py-2.5 text-sm font-semibold tracking-wide transition-colors duration-500 bg-ink/60 text-foreground hover:text-primary-foreground"
-                    >
-                      <span
-                        class="absolute inset-0 -translate-x-full bg-gold-gradient transition-transform duration-500 ease-out group-hover:translate-x-0"
-                      ></span>
+                    <span data-cursor="button" class="group relative inline-flex items-center gap-3 overflow-hidden rounded-full border border-gold px-6 py-2.5 text-sm font-semibold tracking-wide transition-colors duration-500 bg-ink/60 text-foreground hover:text-primary-foreground">
+                      <span class="absolute inset-0 -translate-x-full bg-gold-gradient transition-transform duration-500 ease-out group-hover:translate-x-0"></span>
                       <span class="relative">Send an Inquiry</span>
-                      <span
-                        class="relative transition-transform duration-300 group-hover:translate-x-1"
-                      >
-                        →
-                      </span>
-                    </span>
-                  </a>
+                      <span class="relative transition-transform duration-300 group-hover:translate-x-1"> → </span></span></a>
                 </div>
               </div>
             </div>
@@ -1394,207 +474,56 @@
       </main>
       <!-- FOOTER -->
       <footer class="relative overflow-hidden bg-ink pt-20">
-        <img
-          src="./assets/images/makkah.jpg"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-          class="absolute inset-0 h-full w-full object-cover opacity-[0.07]"
-        />
-        <div
-          class="relative mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[1fr_1.3fr_auto] lg:px-8"
-        >
+        <img src="./assets/images/makkah.jpg" alt="" aria-hidden="true" loading="lazy" class="absolute inset-0 h-full w-full object-cover opacity-[0.07]"/>
+        <div class="relative mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[1fr_1.3fr_auto] lg:px-8">
           <div>
-            <img
-              src="./assets/images/logo.png"
-              alt="Grand Travel"
-              loading="lazy"
-              class="h-14 w-auto"
-            />
+            <img src="./assets/images/logo.png" alt="Grand Travel" loading="lazy" class="h-14 w-auto"/>
             <p class="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Helping you experience Hajj and Umrah with trusted service, comfort, and effortless
-              journeys.
+              Helping you experience Hajj and Umrah with trusted service, comfort, and effortless journeys.
             </p>
             <div class="flex items-center gap-2 mt-6">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Facebook"
-                data-cursor="link"
-                class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-facebook"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                  ></path>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook" data-cursor="link" class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                 </svg>
               </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Instagram"
-                data-cursor="link"
-                class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-instagram"
-                  aria-hidden="true"
-                >
-                  <rect
-                    width="20"
-                    height="20"
-                    x="2"
-                    y="2"
-                    rx="5"
-                    ry="5"
-                  ></rect>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram" data-cursor="link" class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram" aria-hidden="true">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line
-                    x1="17.5"
-                    x2="17.51"
-                    y1="6.5"
-                    y2="6.5"
-                  ></line>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
                 </svg>
               </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn"
-                data-cursor="link"
-                class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-linkedin"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                  ></path>
-                  <rect
-                    width="4"
-                    height="12"
-                    x="2"
-                    y="9"
-                  ></rect>
-                  <circle
-                    cx="4"
-                    cy="4"
-                    r="2"
-                  ></circle>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn" data-cursor="link" class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="YouTube"
-                data-cursor="link"
-                class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-youtube"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
-                  ></path>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube" data-cursor="link" class="grid h-8 w-8 place-items-center rounded-full border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-primary-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube" aria-hidden="true">
+                  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
                   <path d="m10 15 5-3-5-3z"></path>
                 </svg>
               </a>
             </div>
           </div>
           <div class="text-center">
-            <h2 class="font-display text-3xl leading-tight tracking-wide md:text-4xl">
-              For queries or package
-              <br />
+            <h2 class="font-display text-3xl leading-tight tracking-wide md:text-4xl"> For queries or package
+              <br/>
               guidance,
               <span class="text-gold">email us anytime.</span>
             </h2>
-            <form
-              class="mx-auto mt-6 flex max-w-md items-center gap-2 rounded-full border border-gold/40 bg-ink-2 p-1.5"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-mail ml-3 shrink-0 text-gold"
-                aria-hidden="true"
-              >
+            <a href="https://wa.me/923237189361?text=Hello%20Grand%20Travel%2C%20I%20have%20a%20query%20about%20your%20packages." target="_blank" rel="noopener noreferrer" class="footer-glass-message" data-footer-message aria-label="Send your query on WhatsApp"><small>Send Your Query</small></a>
+            <form class="mx-auto mt-6 flex max-w-md items-center gap-2 rounded-full border border-gold/40 bg-ink-2 p-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail ml-3 shrink-0 text-gold" aria-hidden="true">
                 <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                <rect
-                  x="2"
-                  y="4"
-                  width="20"
-                  height="16"
-                  rx="2"
-                ></rect>
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
               </svg>
-              <label
-                for="footer-email"
-                class="sr-only"
-              >
-                Email
-              </label>
-              <input
-                id="footer-email"
-                type="email"
-                required=""
-                placeholder="Enter your email"
-                class="min-w-0 flex-1 bg-transparent px-2 text-sm outline-none placeholder:text-muted-foreground"
-              />
-              <button
-                data-cursor="button"
-                class="rounded-full bg-gold-gradient px-6 py-2 text-xs font-bold uppercase tracking-widest text-primary-foreground"
-              >
+              <label for="footer-email" class="sr-only"> Email </label>
+              <input id="footer-email" type="email" required="" placeholder="Enter your email" class="min-w-0 flex-1 bg-transparent px-2 text-sm outline-none placeholder:text-muted-foreground"/>
+              <button data-cursor="button" class="rounded-full bg-gold-gradient px-6 py-2 text-xs font-bold uppercase tracking-widest text-primary-foreground">
                 Submit
               </button>
             </form>
@@ -1603,214 +532,76 @@
             <h3 class="font-display text-xl tracking-widest text-gold">Quick Links</h3>
             <ul class="mt-4 space-y-2">
               <li>
-                <a
-                  class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold"
-                  href="index.html"
-                >
-                  Home
-                </a>
-              </li>
+                <a class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold" href="index.html"> Home </a></li>
               <li>
-                <a
-                  class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold"
-                  href="about.html"
-                >
-                  About Us
-                </a>
-              </li>
+                <a class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold" href="about.html"> About Us </a></li>
               <li>
-                <a
-                  class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold"
-                  href="packages.html"
-                  data-status="active"
-                  aria-current="page"
-                >
+                <a class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold" href="packages.html" data-status="active" aria-current="page">
                   Packages
-                </a>
-              </li>
+                </a></li>
               <li>
-                <a
-                  class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold"
-                  href="destinations.html"
-                >
+                <a class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold" href="destinations.html">
                   Destinations
-                </a>
-              </li>
+                </a></li>
               <li>
-                <a
-                  class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold"
-                  href="gallery.html"
-                >
-                  Gallery
-                </a>
-              </li>
+                <a class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold" href="gallery.html"> Gallery </a></li>
               <li>
-                <a
-                  class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold"
-                  href="contact.html"
-                >
-                  Contact Us
-                </a>
-              </li>
+                <a class="text-xs uppercase tracking-[0.2em] text-foreground/75 transition-colors hover:text-gold" href="contact.html"> Contact Us </a></li>
             </ul>
           </div>
         </div>
         <div class="relative mt-16 px-3">
-          <p
-            aria-label="Grand Travel &amp; Tours"
-            class="flex flex-wrap justify-center gap-x-[0.25em] font-display text-[17vw] leading-[0.85] md:text-[12.5vw] xl:text-[11rem]"
-          >
-            <span
-              aria-hidden="true"
-              class="inline-flex"
-            >
+          <p aria-label="Grand Travel &amp; Tours" class="flex flex-wrap justify-center gap-x-[0.25em] font-display text-[17vw] leading-[0.85] md:text-[12.5vw] xl:text-[11rem]">
+            <span aria-hidden="true" class="inline-flex">
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  G
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> G </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  R
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> R </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  A
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> A </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  N
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> N </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  D
-                </span>
-              </span>
-            </span>
-            <span
-              aria-hidden="true"
-              class="inline-flex"
-            >
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> D </span></span></span>
+            <span aria-hidden="true" class="inline-flex">
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  T
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> T </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  R
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> R </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  A
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> A </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  V
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> V </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  E
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> E </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  L
-                </span>
-              </span>
-            </span>
-            <span
-              aria-hidden="true"
-              class="inline-flex"
-            >
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> L </span></span></span>
+            <span aria-hidden="true" class="inline-flex">
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-foreground" data-reveal="mask"
-                >
-                  &amp;
-                </span>
-              </span>
-            </span>
-            <span
-              aria-hidden="true"
-              class="inline-flex"
-            >
+                <span class="inline-block text-foreground" data-reveal="mask"> &amp; </span></span></span>
+            <span aria-hidden="true" class="inline-flex">
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  T
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> T </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  O
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> O </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  U
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> U </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  R
-                </span>
-              </span>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> R </span></span>
               <span class="inline-block overflow-hidden">
-                <span
-                  class="inline-block text-gold-gradient" data-reveal="mask"
-                >
-                  S
-                </span>
-              </span>
-            </span>
-          </p>
+                <span class="inline-block text-gold-gradient" data-reveal="mask"> S </span></span></span></p>
         </div>
         <p class="relative border-t border-gold/15 py-4 text-center text-xs text-muted-foreground">
-          ©
-          <!-- -->
-          2026
-          <!-- -->
-          Grand Travel &amp; Tours. All rights reserved.
+          © <!-- --> 2026 <!-- --> Grand Travel &amp; Tours. All rights reserved.
         </p>
       </footer>
+      <a class="whatsapp-float" href="https://wa.me/923237189361?text=Hello%20Grand%20Travel%2C%20I%20have%20a%20query%20about%20your%20packages." target="_blank" rel="noopener noreferrer" aria-label="Chat with Grand Travel on WhatsApp" title="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.5 11.6a8.5 8.5 0 0 1-12.4 7.5L3 20.5l1.4-5.1A8.5 8.5 0 1 1 20.5 11.6Z"/>
+          <path d="M8.6 8.1c-.4.4-.6 1-.5 1.6.3 2.6 3.1 5.4 5.7 5.7.6.1 1.2-.1 1.6-.5l.5-.7-2.1-1.1-.8.8a7.7 7.7 0 0 1-2.9-2.9l.8-.8-1.1-2.1-.7.5Z"/>
+        </svg>
+      </a>
     </div>
-    
     <script src="./assets/js/content.js"></script>
     <script src="./assets/js/main.js" defer></script>
   </body>
